@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, ExternalLink, Download, FileText, CheckCircle, AlertCircle, Layout, BookOpen } from 'lucide-react';
 import logoImg from '../assets/iilm-logo.png';
 import icabcrLogo from '../assets/icabcr-logo.jpg';
+import FeeTable from "./FeeTable";
+import FeeStructure from '../assets/FeeStructure.png';
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -32,7 +34,7 @@ const Submission = () => {
             <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 py-4 shadow-sm">
                 <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
                     <Link to="/" className="flex items-center gap-4 group">
-                        <img src={logoImg} alt="IILM Logo" className="h-10 xl:h-12 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all" />
+                        <img src={logoImg} alt="IILM Logo" className="h-8 xl:h-10 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all" />
                         <span className="w-[1px] h-6 xl:h-8 bg-slate-200"></span>
                         <img
                             src={icabcrLogo}
@@ -96,7 +98,7 @@ const Submission = () => {
                     >
                         <motion.div variants={fadeInUp} className="flex items-center gap-4 mb-6">
                             <span className="h-[1px] w-12 bg-emerald-500"></span>
-                            <p className="text-xs uppercase tracking-[0.3em] font-bold text-emerald-600">Portal Migration</p>
+                            <p className="text-xs uppercase tracking-[0.3em] font-bold text-emerald-600"></p>
                         </motion.div>
                         <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-sans font-bold text-slate-900 mb-8 tracking-tight">
                             Submission <span className="text-slate-400 font-light">Portal</span>
@@ -138,7 +140,6 @@ const Submission = () => {
                             </button>
                         </div>
                     </motion.div>
-
                     <div className="flex flex-col gap-12">
                         {/* Top Row: Key Guidelines and Resources */}
                         <div className="flex flex-col gap-8">
@@ -279,15 +280,25 @@ const Submission = () => {
                                     </a>
                                 </div>
                             </div>
+                                    <section>
+                                        <h4 className="text-lg font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">Fee Structure</h4>
+                                         <div>
+                                            
+                                            <img src={FeeStructure} alt="Fee Structure" width="600" />
+                                         </div>
+                                         
+                                    </section>
+
                         </motion.div>
                     </div>
                 </div>
-            </main>
 
+            </main>
             {/* Footer */}
             <footer className="bg-slate-950 text-white py-12 border-t border-slate-800">
                 <div className="container mx-auto px-6 md:px-12 text-center">
                     <p className="text-slate-400 text-sm font-light">© 2026 IILM University. All rights reserved.</p>
+                
                 </div>
             </footer>
         </div>

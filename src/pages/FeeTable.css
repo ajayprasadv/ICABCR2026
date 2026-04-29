@@ -1,0 +1,32 @@
+.fee-container {
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #333;
+}
+
+.fee-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.fee-row div {
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  white-space: normal;      /* allow wrapping */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* remove extra right border on last column */
+.fee-row div:last-child {
+  border-right: none;
+}
+
+/* header styling */
+.fee-header {
+  font-weight: bold;
+  background-color: #eaeaea;
+}
+

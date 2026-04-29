@@ -87,83 +87,62 @@ const COMMITTEE_DATA = {
     convenor: [
         { name: "Dr. Ajay Prasad", affiliation: "IILM University, Greater Noida" },
     ],
-    secretaries: [
-        { name: "Dr. Hussain Falih Mahdi", affiliation: "Associate Professor, University of Diyala, Iraq" },
-        { name: "Dr. Arijit Ghosh", affiliation: "Indian Statistical Institute (ISI), India" },
-        { name: "Dr. Tanupriya Choudhury", affiliation: "UPES, India" },
-        { name: "Dr. Akash Punhani", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Sudhir Kumar Barai", affiliation: "BITS Pilani, India" },
-        { name: "Dr. Kirti Shukla", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. P. Kumar", affiliation: "IIT Patna, India" },
-        { name: "Dr. Adarsh Kumar", affiliation: "UPES, India" },
-        { name: "Dr. Nitish Kumar Guru", affiliation: "Scientific Assistant (Ballistics), Directorate of Forensic Science and Laboratory, India" },
-        { name: "Dr. Kaushik Ghosh", affiliation: "UPES, India" },
-        { name: "Dr. Sourav Chakraborty", affiliation: "Indian Statistical Institute (ISI), India" },
-        { name: "Dr. Harshal Patil", affiliation: "Professor, IILM University, Greater Noida" },
-        { name: "Dr. Udai Bhan Trivedi", affiliation: "Professor, IILM University, Greater Noida" },
-        { name: "Dr. Amit Kumar", affiliation: "Thapar Institute of Engineering and Technology, India" },
-        { name: "Dr. S. Raghavan", affiliation: "NIT Trichy, India" },
-        { name: "Dr. Ujwal Chakraborty", affiliation: "NIT Silchar, India" },
-        { name: "Dr. Talwar Yoginder", affiliation: "Scientist at National Informatics Centre, India" },
-        { name: "Dr. Supratim Biswas", affiliation: "BIT Mesra Ranchi, India" },
-        { name: "Dr. Gunjan Mittal Roy", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Chandrashekhar Azad", affiliation: "National Institute of Technology, India" },
-        { name: "Dr. Suneet", affiliation: "CU, India" },
-        { name: "Dr. Saurabh Kumar", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Anil Kumar", affiliation: "UPES, India" },
-        { name: "Dr. Kumar Venkatesh", affiliation: "MNNIT Allahabad, India" },
-        { name: "Dr. Rudra P. Pradhan", affiliation: "IIT Kharagpur, India" },
-        { name: "Dr. Anirban Ghatak", affiliation: "Indian Statistical Institute (ISI), India" },
-        { name: "Dr. Richa Vijay", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Anup Dewanji", affiliation: "Indian Statistical Institute (ISI), India" },
-        { name: "Dr. Souvik Ganguli", affiliation: "Thapar Institute of Engineering and Technology, India" },
-        { name: "Dr. Hitesh Kumar Sharma", affiliation: "UPES, India" },
-        { name: "Dr. Jaswinder Singh", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Soumik Das", affiliation: "Indian Statistical Institute (ISI), India" },
-        { name: "Dr. Soumyabrata Chakrabarty", affiliation: "IIT, India" },
-        { name: "Dr. Debrup Chakraborty", affiliation: "Indian Statistical Institute (ISI), India" },
-        { name: "Mr. Karuna Nidhan Upadhyay", affiliation: "Assistant Director (Cyber Forensic), Directorate of Forensic Science and Laboratory, India" },
+    secretary: [
+        { name: "Dr. Saurabh Shanu", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Kingshuk Srivastava", affiliation: "IILM University, Greater Noida" },
     ],
-    publicityChairs: [
-        { name: "Dr. Amit Agrawal", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Manali", affiliation: "Associate Professor, IILM University, Greater Noida" },
+    SecretaryTechnicalProgram: [
+        { name: "Dr. Himanshu Sharma", affiliation: "IILM University, Greater Noida" }, 
     ],
-    publicityCoChairs: [
-        { name: "Dr. Sumit Kumar", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Gaurav Kumar", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Saurabh Shanu", affiliation: "IILM University, India" },
+    TechnicalProgramCommitteeChair: [
+        { name: "Dr. Avadhesh Kumar Gupta", affiliation: "IILM University, Greater Noida" },
     ],
-    financeChair: [
-        { name: "Dr. Sandeep Saxena", affiliation: "Professor, IILM University, Greater Noida" },
+    TechnicalProgramCommitteeCoChairs: [
+        { name: "Dr. Anand Singh", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Amar Shukla", affiliation: "IILM University, Gurugram" },
+        { name: "Dr. Anurag Jain", affiliation: "IILM University, Gurugram" },
+        { name: "Dr. Deependra Rastogi", affiliation: "IILM University, Greater Noida" },
     ],
-    financeCoChairs: [
-        { name: "Dr. Akash Punhani", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Vikas Kamra", affiliation: "Associate Professor, IILM University, Greater Noida" },
+
+    MediaOutreachandArtefactsChair: [
+        { name: "Dr. Pinki Yadav", affiliation: "IILM University, Greater Noida" },
     ],
-    digitalMediaChairs: [
-        { name: "Dr. Lalita Chaudhary", affiliation: "Assistant Professor, IILM University, Greater Noida" },
-        { name: "Dr. Pranav Shrivastav", affiliation: "Assistant Professor, IILM University, Greater Noida" },
+    MediaOutreachandArtefactsCoChair: [
+        { name: "Ms. Priyanka Tyagi", affiliation: "IILM University, Greater Noida" },
     ],
-    digitalMediaCoChairs: [
-        { name: "Dr. Monika Kumari", affiliation: "Assistant Professor, IILM University, Greater Noida" },
-        { name: "Dr. Nayan Kumar Sarkar", affiliation: "Assistant Professor, IILM University, Greater Noida" },
-        { name: "Dr. Swati Vashisht", affiliation: "Assistant Professor, IILM University, Greater Noida" },
-        { name: "Dr. Prakhar Consul", affiliation: "Assistant Professor, IILM University, Greater Noida" },
+    RegistrationCommitteeChairs: [
+        { name: "Dr. Richa Vijay", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Akash Punhani", affiliation: "IILM University, Greater Noida" },
     ],
-    coordinationCommittee: [
-        { name: "Dr. Udai Bhan Trivedi (Chair)", affiliation: "Professor, IILM University, Greater Noida" },
-        { name: "Dr. Harshal Patil", affiliation: "Professor, IILM University, Greater Noida" },
-        { name: "Dr. A K Rastogi", affiliation: "Assistant Professor, IILM University, Greater Noida" },
-        { name: "Dr. Rani Kumari", affiliation: "Assistant Professor, IILM University, Greater Noida" },
-        { name: "Dr. Sumit Singh Dhanda", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Sahil Kansal", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Gunjan Mittal Roy", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Neeraj Pratap", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Ajay Kumar", affiliation: "Associate Professor, IILM University, Greater Noida" },
-        { name: "Dr. Mudita", affiliation: "Assistant Professor, IILM University, Greater Noida" },
-        { name: "Dr. Vijaya Choudhary", affiliation: "Assistant Professor, IILM University, Greater Noida" },
+    FinanceCommitteeChairs: [
+        { name: "Dr. Sandeep Saxena", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Udai Bhan Trivedi", affiliation: "IILM University, Greater Noida" },
+    ],
+    ExecutionandCoordinationCommitteeChairs: [
+        { name: "Dr. Kamal Kant", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Deependra Rastogi", affiliation: "IILM University, Greater Noida" },
+    ],
+    ExecutionandCoordinationCommitteeMembers: [
+        { name: "Dr. Harshal Patil", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. A K Rastogi", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Rani Kumari", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Sumit Singh Dhanda", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Sahil Kansal", affiliation: "IILM University, Greater Noida" },
+    ],
+    SponsorshipCommitteeChairs: [
+        { name: "Dr. Saurabh Shanu", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Amit Agarwal", affiliation: "IILM University, Greater Noida" },
+    ],
+    SponsorshipCommitteeCoChairs: [
+        { name: "Ms. Jyoti Thakur", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Sumeet Choudhary", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Mukesh Kumar", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Hilal", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Hena Khera", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Ajna Mehta", affiliation: "IILM University, Greater Noida" },
     ],
 };
+
 
 const Community = () => {
     return (
@@ -249,29 +228,38 @@ const Community = () => {
                     <CommitteeSection title="Organizing Chairs" icon={<Users size={20} />} members={COMMITTEE_DATA.organizingChairs} />
                     <CommitteeSection title="Organizing Co-Chairs" icon={<Users size={20} />} members={COMMITTEE_DATA.organizingCoChairs} />
                     <CommitteeSection title="Convenor" icon={<Users size={20} />} members={COMMITTEE_DATA.convenor} />
-                    <CommitteeSection title="Secretary" icon={<BookOpen size={20} />} members={COMMITTEE_DATA.secretaries} />
-                    <CommitteeSection title="Secretary (Technical Program)" icon={<BookOpen size={20} />} members={COMMITTEE_DATA.secretaryTechnicalProgram} />
-                    <CommitteeSection title="Technical Program Committee (Chair)" icon={<Briefcase size={20} />} members={COMMITTEE_DATA.technicalProgramChair} />
-                    <CommitteeSection title="Technical Program Committee (Co-Chairs)" icon={<Briefcase size={20} />} members={COMMITTEE_DATA.technicalProgramCoChairs} />
-                    <CommitteeSection title="Media, Outreach and Artefacts (Chairs)" icon={<Share2 size={20} />} members={COMMITTEE_DATA.mediaOutreachChairs} />
-                    <CommitteeSection title="Registration Committee (Chair)" icon={<Users size={20} />} members={COMMITTEE_DATA.registrationChairs} />
-                    <CommitteeSection title="Registration Committee (Co-Chair)" icon={<Users size={20} />} members={COMMITTEE_DATA.registrationCoChairs} />
-                    <CommitteeSection title="Finance Committee (Chairs)" icon={<DollarSign size={20} />} members={COMMITTEE_DATA.financeChairs} />
-                    <CommitteeSection title="Execution and Coordination Committee (Chairs)" icon={<Users size={20} />} members={COMMITTEE_DATA.executionCoordinationChairs} />
-                    <CommitteeSection title="Execution and Coordination Committee (Members)" icon={<Users size={20} />} members={COMMITTEE_DATA.executionCoordinationMembers} />
-                    <CommitteeSection title="Sponsorship Committee (Chairs)" icon={<DollarSign size={20} />} members={COMMITTEE_DATA.sponsorshipChairs} />
-                    <CommitteeSection title="Sponsorship Committee (Co-Chairs)" icon={<DollarSign size={20} />} members={COMMITTEE_DATA.sponsorshipCoChairs} />
+                    <CommitteeSection title="Secretary" icon={<Users size={20} />} members={COMMITTEE_DATA.secretary} />
+                    <CommitteeSection title="Secretary (Technical Program)" icon={<BookOpen size={20} />} members={COMMITTEE_DATA.SecretaryTechnicalProgram} />
+                    <CommitteeSection title="Technical Program Committee (Chair)" icon={<Briefcase size={20} />} members={COMMITTEE_DATA.TechnicalProgramCommitteeChair} />
+                    <CommitteeSection title="Technical Program Committee (Co-Chairs)" icon={<Briefcase size={20} />} members={COMMITTEE_DATA.TechnicalProgramCommitteeCoChairs} />
+                    <CommitteeSection title="Media, Outreach and Artefacts (Chair)" icon={<Share2 size={20} />} members={COMMITTEE_DATA.MediaOutreachandArtefactsChair} />
+                    <CommitteeSection title="Media, Outreach and Artefacts (Co-Chair)" icon={<Share2 size={20} />} members={COMMITTEE_DATA.MediaOutreachandArtefactsCoChair} />
+                    <CommitteeSection title="Registration Committee (Chairs)" icon={<Users size={20} />} members={COMMITTEE_DATA.RegistrationCommitteeChairs} />
+                    <CommitteeSection title="Finance Committee (Chairs)" icon={<DollarSign size={20} />} members={COMMITTEE_DATA.FinanceCommitteeChairs} />
+                    <CommitteeSection title="Execution and Coordination Committee (Chairs)" icon={<Users size={20} />} members={COMMITTEE_DATA.ExecutionandCoordinationCommitteeChairs} />
+                    <CommitteeSection title="Execution and Coordination Committee (Members)" icon={<Users size={20} />} members={COMMITTEE_DATA.ExecutionandCoordinationCommitteeMembers} />
+                    <CommitteeSection title="Sponsorship Committee (Chairs)" icon={<DollarSign size={20} />} members={COMMITTEE_DATA.SponsorshipCommitteeChairs} />
+                    <CommitteeSection title="Sponsorship Committee (Co-Chairs)" icon={<DollarSign size={20} />} members={COMMITTEE_DATA.SponsorshipCommitteeCoChairs} />
 
                 </div>
             </main>
 
             {/* Footer */}
             <footer className="bg-slate-950 text-white py-12 border-t border-slate-800">
-                <div className="container mx-auto px-6 md:px-12 text-center">
-                    <p className="text-slate-400 text-sm">© 2026 IILM University. All rights reserved.</p>
-                    <Link to="/" className="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-emerald-400 hover:text-white transition-colors">
-                        Return to Conference Home
-                    </Link>
+                <div className="container mx-auto px-6 md:px-12">
+                    <div className="text-center mb-8">
+                        <p className="text-slate-400 text-sm mb-6">Indexed & Supported By:</p>
+                        <div className="flex justify-center items-center gap-8 flex-wrap">
+                            <img src={scopusLogo} alt="Scopus" className="h-10 object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                            <img src={novaLogo} alt="Nova" className="h-10 object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                        </div>
+                    </div>
+                    <div className="text-center border-t border-slate-800 pt-8">
+                        <p className="text-slate-400 text-sm">© 2026 IILM University. All rights reserved.</p>
+                        <Link to="/" className="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-emerald-400 hover:text-white transition-colors">
+                            Return to Conference Home
+                        </Link>
+                    </div>
                 </div>
             </footer>
         </div>

@@ -376,70 +376,77 @@ const App = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/95 backdrop-blur-md border-b border-slate-200 py-4 shadow-sm' : 'bg-white/50 backdrop-blur-sm py-6 border-b border-white/40'}`}
+        className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/95 backdrop-blur-md border-b border-slate-200 py-6 shadow-sm' : 'bg-white/50 backdrop-blur-sm py-8 border-b border-white/40'}`}
       >
-        <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-          <div className="flex items-center gap-6">
-            <a href="#" className="flex items-center gap-4 group">
-              {/* IILM Logo */}
-              <img src={logoImg} alt="IILM Logo" className="h-10 xl:h-12 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all" />
-              {/* Divider */}
-              <span className="w-[1px] h-6 xl:h-8 bg-slate-200"></span>
-              {/* ICABCR Logo */}
-              <img
-                src={icabcrLogo}
-                alt="ICABCR 2026"
-                className="h-8 xl:h-10 w-auto object-contain mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all"
-              />
-            </a>
-          </div>
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="flex justify-between items-start mb-4">
+            <div className="flex flex-col gap-3">
+              <a href="#" className="flex items-center gap-4 group">
+                {/* IILM Logo */}
+                <img src={logoImg} alt="IILM Logo" className="h-8 xl:h-10 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all" />
+                {/* Divider */}
+                <span className="w-[1px] h-6 xl:h-8 bg-slate-200"></span>
+                {/* ICABCR Logo */}
+                <img
+                  src={icabcrLogo}
+                  alt="ICABCR 2026"
+                  className="h-8 xl:h-10 w-auto object-contain mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all"
+                />
+              </a>
+              {/* Second row with Nova and Scopus logos */}
+              <div className="flex items-center gap-4 ml-1">
+                <img src={novaLogo} alt="Nova Science Publishers" className="h-6 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
+                <img src={scopusLogo} alt="Scopus" className="h-6 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
+              </div>
+            </div>
 
-          <div className="hidden xl:flex items-center gap-4 2xl:gap-8">
-            <NavItem href="#about" label="About" scrolled={true} />
-            <NavItem href="#expectations" label="Tracks" scrolled={true} />
-            <NavItem href="#milestones" label="Dates" scrolled={true} />
-            <NavItem href="#workshops" label="Workshops" scrolled={true} />
+            <div className="hidden xl:flex items-center gap-4 2xl:gap-8">
+              <NavItem href="#about" label="About" scrolled={true} />
+              <NavItem href="#expectations" label="Tracks" scrolled={true} />
+              <NavItem href="#milestones" label="Dates" scrolled={true} />
+              <NavItem href="#workshops" label="Workshops" scrolled={true} />
 
-            <Link
-              to="/community"
-              className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
-            >
-              Committee
-              <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-            </Link>
+              <Link
+                to="/community"
+                className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
+              >
+                Committee
+                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              </Link>
 
-            <Link
-              to="/editors"
-              className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
-            >
-              Editors
-              <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-            </Link>
+              <Link
+                to="/editors"
+                className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
+              >
+                Editors
+                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              </Link>
 
-            <Link
-              to="/advisory"
-              className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
-            >
-              Advisory
-              <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-            </Link>
+              <Link
+                to="/advisory"
+                className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
+              >
+                Advisory
+                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              </Link>
 
-            <Link
-              to="/submission"
-              className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
-            >
-              Submissions
-              <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-            </Link>
-
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 to="/submission"
-                className="px-8 py-3 text-[10px] font-bold uppercase tracking-[0.25em] transition-all shadow-lg bg-slate-950 text-white shadow-slate-900/10 hover:bg-emerald-600 inline-block text-center"
+                className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
               >
-                Submit Paper
+                Submissions
+                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>
-            </motion.div>
+
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link
+                  to="/submission"
+                  className="px-8 py-3 text-[10px] font-bold uppercase tracking-[0.25em] transition-all shadow-lg bg-slate-950 text-white shadow-slate-900/10 hover:bg-emerald-600 inline-block text-center"
+                >
+                  Submit Paper
+                </Link>
+              </motion.div>
+            </div>
           </div>
 
           <div className="xl:hidden flex items-center gap-4">
@@ -514,7 +521,7 @@ const App = () => {
 
       {/* --- HERO SECTION --- */}
       {/* --- HERO SECTION --- */}
-      <header className="relative min-h-[100vh] flex items-center pt-24 pb-12 overflow-hidden bg-slate-50">
+      <header className="relative min-h-[100vh] flex items-center pt-48 pb-12 overflow-hidden bg-slate-50">
         {/* BACKGROUND: Subtle Grid Pattern */}
         <div className="absolute inset-0 z-0 opacity-[0.4]"
           style={{ backgroundImage: 'radial-gradient(#cbd5e1 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
@@ -715,7 +722,7 @@ const App = () => {
                     <BookOpen className="mb-4 text-emerald-400" size={24} />
                     <h3 className="text-lg font-serif mb-2">Scopus Indexed Proceedings</h3>
                     <p className="text-slate-400 text-sm mb-5 leading-relaxed">
-                      Accepted papers published by Nova Science Publishers, submitted for possible Scopus indexing.
+                      Accepted and presentedpapers will be sent to the publisher <strong className="text-slate-700">Nova Science Publishers</strong>, for possible publishing and later submitting for Scopus indexing.
                     </p>
 
                     <a href="#" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-emerald-400 hover:text-white transition-colors">
@@ -735,7 +742,7 @@ const App = () => {
                     <strong>International Conference on AI Based Cyber Resilience (ICABCR-2026)</strong> serves as a premier global forum connecting visionaries from academia and industry.
                   </p>
                   <p className="mt-4 text-slate-500 font-light leading-relaxed">
-                    By converging <span className="text-emerald-700 font-medium">Artificial Intelligence</span> with robust <span className="text-slate-900 font-medium">Cyber Resilience</span> strategies, we aim to define the future of digital trust. This forum addresses the critical need for adaptive defenses in an era of sophisticated, AI-generated cyber threats. Papers accepted by <strong className="text-slate-700">Nova Science Publishers</strong> will be submitted for possible Scopus indexing.
+                    By converging <span className="text-emerald-700 font-medium">Artificial Intelligence</span> with robust <span className="text-slate-900 font-medium">Cyber Resilience</span> strategies, we aim to define the future of digital trust. This forum addresses the critical need for adaptive defenses in an era of sophisticated, AI-generated cyber threats. Accepted and presented papers will be sent to the publisher <strong className="text-slate-700">Nova Science Publishers</strong> for possible publication and later will be submitted for possible Scopus indexing.
                   </p>
 
                   <button
@@ -1008,6 +1015,7 @@ const App = () => {
               <span className="font-serif font-bold text-3xl text-white mb-8 block">ICABCR 2026</span>
               <p className="text-slate-400 font-light leading-relaxed max-w-sm mb-8">
                 Advancing AI-based cyber resilience for a safer digital world. Organized by IILM University, Greater Noida — Published by Nova Science Publishers.
+                
               </p>
               <div className="flex gap-6">
                 {[Twitter, Linkedin, Globe].map((Icon, i) => (
@@ -1050,19 +1058,13 @@ const App = () => {
                 whileHover={{ scale: 1.05 }}
                 className="bg-white rounded-lg px-6 py-4 flex items-center justify-center shadow-lg shadow-black/20 cursor-pointer"
               >
-                <img src={novaLogo} alt="Nova Science Publishers" className="h-10 w-auto object-contain" />
+                <img src={novaLogo} alt="Nova Science Publishers" className="h-14 w-auto object-contain" />
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="bg-white rounded-lg px-6 py-4 flex items-center justify-center shadow-lg shadow-black/20 cursor-pointer"
               >
-                <img src={scopusLogo} alt="Scopus" className="h-10 w-auto object-contain" />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-white rounded-lg px-4 py-3 flex items-center justify-center shadow-lg shadow-black/20 cursor-pointer"
-              >
-                <img src={logoImg} alt="IILM University" className="h-10 w-auto object-contain" />
+                <img src={scopusLogo} alt="Scopus" className="h-14 w-auto object-contain" />
               </motion.div>
             </div>
           </div>
