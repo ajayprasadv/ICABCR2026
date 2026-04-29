@@ -296,8 +296,14 @@ const Submission = () => {
             </main>
             {/* Footer */}
             <footer className="bg-slate-950 text-white py-12 border-t border-slate-800">
-                <div className="container mx-auto px-6 md:px-12 text-center">
-                    <p className="text-slate-400 text-sm font-light">© 2026 IILM University. All rights reserved.</p>
+                <div className="container mx-auto px-6 md:px-12">
+                    <div className="mb-8 pb-8 border-b border-slate-800">
+                        <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-4">Acknowledgment</h4>
+                        <p className="text-sm text-slate-400 leading-relaxed max-w-3xl">
+                            The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+                        </p>
+                    </div>
+                    <p className="text-slate-400 text-sm font-light text-center">© 2026 IILM University. All rights reserved.</p>
                 
                 </div>
             </footer>
