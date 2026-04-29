@@ -379,21 +379,23 @@ const App = () => {
         className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/95 backdrop-blur-md border-b border-slate-200 py-6 shadow-sm' : 'bg-white/50 backdrop-blur-sm py-8 border-b border-white/40'}`}
       >
         <div className="container mx-auto px-6 md:px-12">
-          <div className="flex justify-between items-start mb-4">
-            <div className="flex flex-col gap-3">
+          <div className="flex justify-between items-start gap-8">
+            <div className="flex flex-col gap-2">
               <a href="#" className="flex items-center gap-4 group">
                 {/* IILM Logo */}
                 <img src={logoImg} alt="IILM Logo" className="h-8 xl:h-10 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all" />
                 {/* Divider */}
                 <span className="w-[1px] h-6 xl:h-8 bg-slate-200"></span>
-                {/* ICABCR Logo */}
+              </a>
+              {/* Second row with ICABCR Logo */}
+              <a href="#" className="flex items-center gap-4 group">
                 <img
                   src={icabcrLogo}
                   alt="ICABCR 2026"
                   className="h-8 xl:h-10 w-auto object-contain mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all"
                 />
               </a>
-              {/* Second row with Nova and Scopus logos */}
+              {/* Third row with Nova and Scopus logos */}
               <div className="flex items-center gap-4 ml-1">
                 <img src={novaLogo} alt="Nova Science Publishers" className="h-6 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
                 <img src={scopusLogo} alt="Scopus" className="h-6 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
