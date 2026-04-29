@@ -114,6 +114,27 @@ const Submission = () => {
             <main className="pb-32 relative z-10">
                 <div className="container mx-auto px-6 md:px-12">
 
+                    {/* Acknowledgment Section */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                        className="mb-20 bg-slate-50 border border-slate-200 p-8 md:p-12 rounded-2xl shadow-sm"
+                    >
+                        <div className="flex items-start gap-6">
+                            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 shrink-0">
+                                <FileText size={24} />
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-serif text-slate-900 mb-3">Acknowledgment</h3>
+                                <p className="text-slate-600 text-base leading-relaxed">
+                                    The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+                                </p>
+                            </div>
+                        </div>
+                    </motion.div>
+
                     {/* Submission Status (CMT Link) */}
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
