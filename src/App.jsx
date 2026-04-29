@@ -483,45 +483,52 @@ const App = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-white flex flex-col items-center justify-center gap-8"
+            className="fixed inset-0 z-[60] bg-white flex flex-col items-center justify-start pt-24 gap-6 overflow-y-auto"
           >
             {['About', 'Tracks', 'Dates', 'Workshops'].map(item => (
-              <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setIsMenuOpen(false)} className="text-3xl font-serif text-slate-900 hover:italic transition-all">
+              <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setIsMenuOpen(false)} className="text-2xl md:text-3xl font-serif text-slate-900 hover:italic transition-all">
                 {item}
               </a>
             ))}
             <Link
               to="/community"
               onClick={() => setIsMenuOpen(false)}
-              className="text-3xl font-serif text-slate-900 hover:italic transition-all"
+              className="text-2xl md:text-3xl font-serif text-slate-900 hover:italic transition-all"
             >
               Committee
             </Link>
             <Link
               to="/editors"
               onClick={() => setIsMenuOpen(false)}
-              className="text-3xl font-serif text-slate-900 hover:italic transition-all"
+              className="text-2xl md:text-3xl font-serif text-slate-900 hover:italic transition-all"
             >
               Editors
             </Link>
             <Link
               to="/advisory"
               onClick={() => setIsMenuOpen(false)}
-              className="text-3xl font-serif text-slate-900 hover:italic transition-all"
+              className="text-2xl md:text-3xl font-serif text-slate-900 hover:italic transition-all"
             >
               Advisory Boards
             </Link>
             <Link
               to="/submission"
               onClick={() => setIsMenuOpen(false)}
-              className="text-3xl font-serif text-slate-900 hover:italic transition-all"
+              className="text-2xl md:text-3xl font-serif text-slate-900 hover:italic transition-all"
             >
               Submission Guidelines
             </Link>
+            <a
+              href="/cmt-acknowledgment.html"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-2xl md:text-3xl font-serif text-slate-900 hover:italic transition-all"
+            >
+              CMT Acknowledgment
+            </a>
             <Link
               to="/submission"
               onClick={() => setIsMenuOpen(false)}
-              className="mt-8 bg-slate-950 text-white px-10 py-4 text-xs font-bold uppercase tracking-widest block text-center"
+              className="mt-4 bg-slate-950 text-white px-10 py-4 text-xs font-bold uppercase tracking-widest block text-center"
             >
               Submit Paper
             </Link>
