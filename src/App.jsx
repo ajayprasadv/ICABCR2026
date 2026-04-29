@@ -1050,9 +1050,9 @@ const App = () => {
             </div>
           </div>
 
-          {/* --- ACKNOWLEDGMENT --- */}
+          {/* --- CMT ACKNOWLEDGMENT --- */}
           <div className="mb-12 pb-12 border-b border-white/10">
-            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-4">Acknowledgment</h4>
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-4">CMT Acknowledgment</h4>
             <p className="text-sm text-slate-400 leading-relaxed max-w-3xl">
               The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
             </p>

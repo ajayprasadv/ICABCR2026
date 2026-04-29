@@ -114,7 +114,7 @@ const Submission = () => {
             <main className="pb-32 relative z-10">
                 <div className="container mx-auto px-6 md:px-12">
 
-                    {/* Acknowledgment Section */}
+                    {/* CMT Acknowledgment Section */}
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -127,7 +127,7 @@ const Submission = () => {
                                 <FileText size={24} />
                             </div>
                             <div>
-                                <h3 className="text-lg font-serif text-slate-900 mb-3">Acknowledgment</h3>
+                                <h3 className="text-lg font-serif text-slate-900 mb-3">CMT Acknowledgment</h3>
                                 <p className="text-slate-600 text-base leading-relaxed">
                                     The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
                                 </p>
@@ -319,7 +319,7 @@ const Submission = () => {
             <footer className="bg-slate-950 text-white py-12 border-t border-slate-800">
                 <div className="container mx-auto px-6 md:px-12">
                     <div className="mb-8 pb-8 border-b border-slate-800">
-                        <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-4">Acknowledgment</h4>
+                        <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-4">CMT Acknowledgment</h4>
                         <p className="text-sm text-slate-400 leading-relaxed max-w-3xl">
                             The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
                         </p>
