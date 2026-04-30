@@ -56,6 +56,7 @@ const nationalAdvisory = [
     { name: "Dr. Amit Agarwal", affiliation: "Director, Institute of Technology, Gopeshwar, Uttarakhand, India" },
     { name: "Dr. Sanghamitra Bandyopadhyay", affiliation: "Indian Statistical Institute (ISI), Kolkata" },
     { name: "Dr. Jamuna Kanta Sing", affiliation: "Professor, Jadavpur University, India" },
+    { name: "Dr. T P Singh", affiliation: "Pro-Vice Chancellor, Chandigarh University, Lucknow, India" },
 ];
 
 const AdvisoryList = ({ title, members }) => (
