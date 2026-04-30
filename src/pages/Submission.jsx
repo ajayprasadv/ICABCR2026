@@ -154,18 +154,23 @@ const Submission = () => {
                         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
                             <div className="flex items-start gap-6">
                                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 shrink-0">
-                                    <AlertCircle size={32} />
+                                    <CheckCircle size={32} />
                                 </div>
                                 <div>
                                     <h2 className="text-2xl md:text-3xl font-serif text-slate-900 mb-2">Submission Link</h2>
                                     <p className="text-slate-600 text-lg">
-                                        Submission Must be via CMT: <span className="text-emerald-600 font-semibold">Link will be active soon.</span>
+                                        Submission must be via CMT: <a href="https://cmt3.research.microsoft.com/ICABCR2026" target="_blank" rel="noreferrer" className="text-emerald-600 font-semibold underline hover:text-emerald-700">https://cmt3.research.microsoft.com/ICABCR2026/Submission/</a>
                                     </p>
                                 </div>
                             </div>
-                            <button className="px-8 py-4 bg-slate-100 border border-slate-200 text-slate-500 text-xs font-bold uppercase tracking-[0.2em] rounded-full cursor-not-allowed">
-                                Coming Soon
-                            </button>
+                            <a
+                                href="https://cmt3.research.microsoft.com/ICABCR2026"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="px-8 py-4 bg-emerald-600 border border-emerald-700 text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full transition-colors hover:bg-emerald-700"
+                            >
+                                Active
+                            </a>
                         </div>
                     </motion.div>
                     <div className="flex flex-col gap-12">
