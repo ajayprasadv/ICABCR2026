@@ -123,10 +123,10 @@ const COMMITTEE_DATA = {
         { name: "Dr. Deependra Rastogi", affiliation: "IILM University, Greater Noida" },
     ],
     ExecutionandCoordinationCommitteeMembers: [
-        { name: "Dr. Harshal Patil", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. ", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. A K Rastogi", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Rani Kumari", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Sumit Singh Dhanda", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. ", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Sahil Kansal", affiliation: "IILM University, Greater Noida" },
     ],
     SponsorshipCommitteeChairs: [
