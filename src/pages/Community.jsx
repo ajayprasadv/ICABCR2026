@@ -145,6 +145,10 @@ const COMMITTEE_DATA = {
         { name: "Ms. Hena Khera", affiliation: "IILM University, Greater Noida" },
         { name: "Ms. Aina Mehta", affiliation: "IILM University, Greater Noida" },
     ],
+        WorkshopExecutionChairs: [
+        { name: "Dr. Monika Kumari", affiliation: "IILM University, Greater Noida" },
+        { name: "Mr. Anik Acharjee", affiliation: "IILM University, Greater Noida" },
+    ],
     technicalProgramCommitteeMembers: [
         { name: "Dr. Ved Prakash Mishra", affiliation: "Professor, Amity University Dubai" },
         { name: "Dr Swadha Gupta", affiliation: "Shiratech Knowtion GmbH, Germany" },
@@ -312,6 +316,7 @@ const Community = () => {
                     <CommitteeSection title="Execution and Coordination Committee (Members)" icon={<Users size={20} />} members={COMMITTEE_DATA.ExecutionandCoordinationCommitteeMembers} />
                     <CommitteeSection title="Sponsorship Committee (Chairs)" icon={<DollarSign size={20} />} members={COMMITTEE_DATA.SponsorshipCommitteeChairs} />
                     <CommitteeSection title="Sponsorship Committee (Co-Chairs)" icon={<DollarSign size={20} />} members={COMMITTEE_DATA.SponsorshipCommitteeCoChairs} />
+                    <CommitteeSection title="Workshop Execution Committee (Chairs)" icon={<Users size={20} />} members={COMMITTEE_DATA.WorkshopExecutionChairs} />  
                     <CommitteeSection title="Technical Program Committee" icon={<Briefcase size={20} />} members={COMMITTEE_DATA.technicalProgramCommitteeMembers} />
 
                 </div>
