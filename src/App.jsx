@@ -14,6 +14,7 @@ import workflowImg from './assets/submission-workflow.jpg';
 import icabcrLogo from './assets/icabcr-logo.jpg';
 import novaLogo from './assets/nova-logo.jpg';
 import scopusLogo from './assets/scopus-logo.png';
+import sponsorshipPdf from './assets/ICABCR-2026 Sponsorship Brochure Title.pdf';
 
 const ICADC_CONTENT = {
   deadlines: [
@@ -448,6 +449,25 @@ const App = () => {
                 <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </a>
 
+              <a
+                href={sponsorshipPdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
+              >
+                Sponsorship Brochure
+                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              </a>
+
+              <a
+                href={sponsorshipPdf}
+                download="ICABCR-2026-Sponsorship-Brochure.pdf"
+                className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
+              >
+                Download Brochure
+                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              </a>
+
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to="/submission"
@@ -524,6 +544,15 @@ const App = () => {
               className="text-2xl md:text-3xl font-serif text-slate-900 hover:italic transition-all"
             >
               CMT Acknowledgment
+            </a>
+            <a
+              href={sponsorshipPdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-2xl md:text-3xl font-serif text-slate-900 hover:italic transition-all"
+            >
+              Sponsorship Brochure
             </a>
             <Link
               to="/submission"
