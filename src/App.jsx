@@ -459,15 +459,6 @@ const App = () => {
                 <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </a>
 
-              <a
-                href={sponsorshipPdf}
-                download="ICABCR-2026-Sponsorship-Brochure.pdf"
-                className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
-              >
-                Download Brochure
-                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-              </a>
-
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to="/submission"
