@@ -612,15 +612,15 @@ const App = () => {
                 Oct 09-10, 2026
               </motion.div>
               {/* Scrolling Deadlines Ticker */}
-              <motion.div variants={fadeInUp} className="w-full overflow-hidden #3f10ead0/10 border-y border-amber-400/20 py-2">
+              <motion.div variants={fadeInUp} className="w-full overflow-hidden #3f10ead0 border-y border-amber-400/20 py-2">
                 <motion.div
                   animate={{ x: ["0%", "-50%"] }}
                   transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
                   className="flex gap-12 whitespace-nowrap"
                 >
                   {[...ICADC_CONTENT.deadlines, ...ICADC_CONTENT.deadlines].map((item, idx) => (
-                    <div key={idx} className="flex items-center gap-3">
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-amber-300">{item.label}:</span>
+                    <div key={`ticker-${idx}`} className="flex items-center gap-3">
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-600">{item.label}:</span>
                       <span className="text-[10px] font-bold #1f1354">{item.date}</span>
                       <span className="#ea9e10 ml-4">/</span>
                     </div>
