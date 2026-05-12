@@ -97,6 +97,7 @@ const COMMITTEE_DATA = {
     TechnicalProgramCommitteeChair: [
         { name: "Dr. Avadhesh Kumar Gupta", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Anand Singh", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Neha Jain", affiliation: "IILM University, Greater Noida" },
     ],
     TechnicalProgramCommitteeCoChairs: [
         { name: "Dr. Saurabh Kumar", affiliation: "IILM University, Greater Noida" },
