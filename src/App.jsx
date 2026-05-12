@@ -611,7 +611,22 @@ const App = () => {
               <motion.div variants={fadeInUp} className="text-2xl md:text-3xl font-semibold text-emerald-600 mb-8 tracking-wide">
                 Oct 09-10, 2026
               </motion.div>
-
+              {/* Scrolling Deadlines Ticker */}
+              <motion.div variants={fadeInUp} className="w-full overflow-hidden #3f10ead0/10 border-y border-amber-400/20 py-2">
+                <motion.div
+                  animate={{ x: ["0%", "-50%"] }}
+                  transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
+                  className="flex gap-12 whitespace-nowrap"
+                >
+                  {[...ICADC_CONTENT.deadlines, ...ICADC_CONTENT.deadlines].map((item, idx) => (
+                    <div key={idx} className="flex items-center gap-3">
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-amber-300">{item.label}:</span>
+                      <span className="text-[10px] font-bold #1f1354">{item.date}</span>
+                      <span className="#ea9e10 ml-4">/</span>
+                    </div>
+                  ))}
+                </motion.div>
+              </motion.div>
               {/* Description */}
               <motion.p variants={fadeInUp} className="text-lg md:text-2xl text-slate-600 font-light max-w-2xl leading-relaxed border-l-2 border-emerald-500 pl-4 md:pl-6">
                 Where <span className="font-semibold text-slate-900">Artificial Intelligence</span> meets <span className="font-semibold text-slate-900">Cyber Resilience</span>.
