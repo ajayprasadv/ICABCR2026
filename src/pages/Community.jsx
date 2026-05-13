@@ -152,6 +152,7 @@ const COMMITTEE_DATA = {
     WorkshopExecutionCoChairs: [
         { name: "Mr. Anik Acharjee", affiliation: "IILM University, Greater Noida" },
         { name: "Mr. Gagan Gupta", affiliation: "IILM University, Greater Noida" },
+        { name: "Ms. Simran Chughwani", affiliation: "IILM University, Greater Noida" },
     ],
     technicalProgramCommitteeMembers: [
         { name: "Dr. Ved Prakash Mishra", affiliation: "Professor, Amity University Dubai" },
