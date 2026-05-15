@@ -133,6 +133,7 @@ const COMMITTEE_DATA = {
     ExecutionandCoordinationCommitteeChairs: [
         { name: "Dr. Kamal Kant", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Deependra Rastogi", affiliation: "IILM University, Greater Noida" },
+        {name: "Dr. Gunjan Mittal Roy", affiliation: "IILM University, Greater Noida" },
     ],
     ExecutionandCoordinationCommitteeMembers: [
         { name: "Mr. Shantanu Bindewari", affiliation: "IILM University, Greater Noida" },
@@ -167,6 +168,7 @@ const COMMITTEE_DATA = {
         { name: "Ms. Simran Chughwani", affiliation: "IILM University, Greater Noida" },
     ],
     technicalProgramCommitteeMembers: [
+        {name: "Dr. Gunjan Mittal Roy", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Ved Prakash Mishra", affiliation: "Professor, Amity University Dubai" },
         { name: "Dr Swadha Gupta", affiliation: "Shiratech Knowtion GmbH, Germany" },
         { name: "Dr. Seema Rawat", affiliation: "Associate Professor, Amity University Tashkent Uzbekistan" },
