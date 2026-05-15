@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import {
   Calendar, MapPin, ArrowRight, Users, Clock, Download, ShieldCheck, Mail, Globe, Menu, X, ChevronRight, BookOpen, Award, Search, ExternalLink, Plus, Linkedin, Twitter, FileText, Briefcase, GraduationCap, Microscope, ArrowUpRight
 } from 'lucide-react';
-import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useTransform, isValidMotionProp } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 // Assets
@@ -1126,6 +1126,7 @@ const App = () => {
               >
                 <img src={scopusLogo} alt="Scopus" className="h-14 w-auto object-contain" />
               </motion.div>
+         
             </div>
           </div>
 
@@ -1134,6 +1135,12 @@ const App = () => {
             <div className="flex gap-8">
               <a href="#" className="hover:text-slate-400">Privacy Policy</a>
               <a href="#" className="hover:text-slate-400">Terms of Service</a>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="bg-white rounded-lg px-6 py-4 flex items-center justify-center shadow-lg shadow-black/20 cursor-pointer"
+              >
+                <img src={logoImg} alt="IILM University" className="h-14 w-auto object-contain" />
+              </motion.div>   
             </div>
           </div>
         </div>
