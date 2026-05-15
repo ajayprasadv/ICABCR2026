@@ -384,7 +384,7 @@ const App = () => {
             <div className="flex flex-col gap-2">
               <a href="#" className="flex items-center gap-4 group">
                 {/* IILM Logo */}
-                <img src={logoImg} alt="IILM Logo" className="h-12 xl:h-16 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all" />
+                <img src={logoImg} alt="IILM Logo" className="h-8 xl:h-10 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all" />
                 {/* Divider */}
                 <span className="w-[1px] h-6 xl:h-8 bg-slate-200"></span>
               </a>
