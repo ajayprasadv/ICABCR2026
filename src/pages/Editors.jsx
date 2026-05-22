@@ -7,7 +7,7 @@ import icabcrLogo from '../assets/icabcr-logo.jpg';
 
 const EDITORS_DATA = [
     { name: "Dr. Ajay Prasad", affiliation: "IILM University Greater Noida, India" },
-    { name: "Dr. Alok Agarwal", affiliation: "IILM University, Greater Noida" },
+    // { name: "Dr. Alok Agarwal", affiliation: "IILM University, Greater Noida" },
     { name: "Dr. Jagdish Chandra Patni", affiliation: "Chandigarh University, Mohali, India" },
     { name: "Dr. Suneet Kumar Gupta", affiliation: "Chandigarh University, Mohali, India" },
     { name: "Dr. Babusena Paul", affiliation: "Director, Institute For Intelligent Systems, University Of Johannesburg, South Africa" },
