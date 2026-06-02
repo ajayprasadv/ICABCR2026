@@ -70,7 +70,7 @@ const COMMITTEE_DATA = {
     ],
     generalChairs: [
         { name: "Dr. Munish Sabharwal", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Alok Agarwal", affiliation: "IILM University, Greater Noida" },
+        // { name: "Dr. Alok Agarwal", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Ravi S Iyer", affiliation: "IISc Bengaluru, India" },
         { name: "Dr. Babusena Paul", affiliation: "University Of Johannesburg, South Africa" },
     ],
