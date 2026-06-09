@@ -69,8 +69,8 @@ const COMMITTEE_DATA = {
         { name: "Dr. Jayasankar Variyar", affiliation: "Vice Chancellor, IILM University, Greater Noida, India" },
     ],
     generalChairs: [
+        { name: "Dr. Vadivel Ayyasamy", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Munish Sabharwal", affiliation: "IILM University, Greater Noida" },
-        // { name: "Dr. Alok Agarwal", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Ravi S Iyer", affiliation: "IISc Bengaluru, India" },
         { name: "Dr. Babusena Paul", affiliation: "University Of Johannesburg, South Africa" },
     ],
