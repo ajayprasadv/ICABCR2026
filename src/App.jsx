@@ -399,7 +399,7 @@ const App = () => {
               {/* Third row with Nova and Scopus logos */}
               <div className="flex items-center gap-4 ml-1">
                 <img src={novaLogo} alt="Nova Science Publishers" className="h-6 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
-                <img src={scopusLogo} alt="Scopus" className="h-6 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
+                <img src={scopusLogo} alt="Scopus" className="h-7 sm:h-8 md:h-9 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
               </div>
             </div>
 
