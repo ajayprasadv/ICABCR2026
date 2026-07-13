@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import logoImg from '../assets/iilm-logo.png';
 import icabcrLogo from '../assets/icabcr-logo.jpg';
+import ConferenceAlerts from './assets/ConferenceAlerts.png';
+
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -120,11 +122,23 @@ const CMTAcknowledgment = () => {
 
             {/* Footer */}
             <footer className="bg-slate-950 text-white py-12 border-t border-slate-800">
-                <div className="container mx-auto px-6 md:px-12 text-center">
-                    <p className="text-slate-400 text-sm">© 2026 IILM University. All rights reserved.</p>
-                    <Link to="/" className="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-blue-400 hover:text-white transition-colors">
-                        Return to Conference Home
-                    </Link>
+                <div className="container mx-auto px-6 md:px-12">
+                    <div className="text-center mb-8">
+                        <p className="text-slate-400 text-sm mb-6">Indexed & Supported By:</p>
+                        <div className="flex justify-center items-center gap-8 flex-wrap">
+                            <img src={scopusLogo} alt="Scopus" className="h-10 object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                            <img src={novaLogo} alt="Nova" className="h-10 object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                            <a href="https://conferencealerts.co.in/" className="flex items-center gap-4 group">
+                            <img src={ConferenceAlerts} alt="Conference Alerts" className="h-14 w-auto object-contain" />
+                            </a>                        
+                        </div>
+                    </div>
+                    <div className="text-center border-t border-slate-800 pt-8">
+                        <p className="text-slate-400 text-sm">© 2026 IILM University. All rights reserved.</p>
+                        <Link to="/" className="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-emerald-400 hover:text-white transition-colors">
+                            Return to Conference Home
+                        </Link>
+                    </div>
                 </div>
             </footer>
         </div>

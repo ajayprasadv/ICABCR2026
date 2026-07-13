@@ -6,6 +6,8 @@ import logoImg from '../assets/iilm-logo.png';
 import icabcrLogo from '../assets/icabcr-logo.jpg';
 import novaLogo from '../assets/nova-logo.jpg';
 import scopusLogo from '../assets/scopus-logo.png';
+import ConferenceAlerts from '../assets/ConferenceAlerts.png';
+
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -350,6 +352,9 @@ const Community = () => {
                         <div className="flex justify-center items-center gap-8 flex-wrap">
                             <img src={scopusLogo} alt="Scopus" className="h-10 object-contain opacity-80 hover:opacity-100 transition-opacity" />
                             <img src={novaLogo} alt="Nova" className="h-10 object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                            <a href="https://conferencealerts.co.in/" className="flex items-center gap-4 group">
+                            <img src={ConferenceAlerts} alt="Conference Alerts" className="h-14 w-auto object-contain" />
+                            </a>                        
                         </div>
                     </div>
                     <div className="text-center border-t border-slate-800 pt-8">
