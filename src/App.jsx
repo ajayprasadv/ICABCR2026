@@ -14,6 +14,7 @@ import workflowImg from './assets/submission-workflow.jpg';
 import icabcrLogo from './assets/icabcr-logo.jpg';
 import novaLogo from './assets/nova-logo.jpg';
 import scopusLogo from './assets/scopus-logo.png';
+import ConferenceAlerts from './assets/ConferenceAlerts.png';
 import sponsorshipPdf from './assets/ICABCR-2026 Sponsorship Brochure Title.pdf';
 
 const ICADC_CONTENT = {
@@ -1125,8 +1126,18 @@ const App = () => {
                 className="bg-white rounded-lg px-6 py-4 flex items-center justify-center shadow-lg shadow-black/20 cursor-pointer"
               >
                 <img src={scopusLogo} alt="Scopus" className="h-14 w-auto object-contain" />
+ 
               </motion.div>
-         
+
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="bg-white rounded-lg px-1 py-1 flex items-center justify-center shadow-lg shadow-black/20 cursor-pointer"
+              >
+                <a href="https://conferencealerts.co.in/" className="flex items-center gap-4 group">
+                  <img src={ConferenceAlerts} alt="Conference Alerts" className="h-14 w-auto object-contain" />
+                </a>
+              </motion.div>  
+
             </div>
           </div>
 
