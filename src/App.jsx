@@ -1129,6 +1129,13 @@ const App = () => {
  
               </motion.div>
 
+            </div>
+          </div>  
+          
+          <div className="mb-12 pb-12 border-b border-white/10">
+
+            <p className="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-500 mb-8">Outreach &amp; advertizing Partners</p>
+            <div className="flex flex-wrap items-center gap-6">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="bg-white rounded-lg px-1 py-1 flex items-center justify-center shadow-lg shadow-black/20 cursor-pointer"
@@ -1138,7 +1145,7 @@ const App = () => {
                 </a>
               </motion.div>  
 
-            </div>
+            </div>            
           </div>
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase font-bold tracking-widest text-slate-600">
