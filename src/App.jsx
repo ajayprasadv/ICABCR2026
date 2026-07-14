@@ -20,7 +20,7 @@ import sponsorshipPdf from './assets/ICABCR-2026 Sponsorship Brochure Title.pdf'
 const ICADC_CONTENT = {
   deadlines: [
     { label: "Submission Deadline", date: "31 August 2026", status: "Open", color: "text-emerald-600", bg: "bg-emerald-50" },
-    { label: "Acceptance Notification", date: "5 August 2026", status: "Upcoming", color: "text-slate-500", bg: "bg-slate-50" },
+    { label: "Acceptance Notification (starts)", date: "5 August 2026", status: "Upcoming", color: "text-slate-500", bg: "bg-slate-50" },
     { label: "Paper Registration Opens", date: "5 August 2026", status: "Pending", color: "text-slate-500", bg: "bg-slate-50" },
     { label: "Paper Registration Closes", date: "15 September 2026", status: "Pending", color: "text-slate-500", bg: "bg-slate-50" },
     { label: "Camera Ready Submission", date: "20 September 2026", status: "Pending", color: "text-slate-500", bg: "bg-slate-50" },
