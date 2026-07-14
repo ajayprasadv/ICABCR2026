@@ -196,7 +196,7 @@ const Submission = () => {
                                         { label: "Integrity", value: "Must include a Turnitin Report." },
                                         { label: "Plagiarism", value: "< 10%" },
                                         { label: "AI Similarity", value: "< 20%" },
-                                        { label: "Eligibility", value: "First author must be an M.D., Ph.D., or equivalent." }
+                                        // { label: "Eligibility", value: "First author must be an M.D., Ph.D., or equivalent." }
                                     ].map((item, idx) => (
                                         <div key={idx} className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
                                             <h4 className="text-xs uppercase tracking-widest text-slate-400 mb-2 font-bold">{item.label}</h4>
