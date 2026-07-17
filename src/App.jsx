@@ -20,7 +20,7 @@ import sponsorshipPdf from './assets/ICABCR-2026 Sponsorship Brochure Title.pdf'
 const ICADC_CONTENT = {
   deadlines: [
     { label: "Submission Deadline", date: "31 August 2026", status: "Open", color: "text-emerald-600", bg: "bg-emerald-50" },
-    { label: "Acceptance Notification (starts)", date: "5 August 2026", status: "Upcoming", color: "text-slate-500", bg: "bg-slate-50" },
+    // { label: "Acceptance Notification (starts)", date: "5 August 2026", status: "Upcoming", color: "text-slate-500", bg: "bg-slate-50" },
     { label: "Paper Registration Opens", date: "5 August 2026", status: "Pending", color: "text-slate-500", bg: "bg-slate-50" },
     { label: "Paper Registration Closes", date: "15 September 2026", status: "Pending", color: "text-slate-500", bg: "bg-slate-50" },
     { label: "Camera Ready Submission", date: "20 September 2026", status: "Pending", color: "text-slate-500", bg: "bg-slate-50" },
@@ -695,7 +695,7 @@ const App = () => {
               {[
                 { label: "Host", val: "IILM University", sub: "Greater Noida, India", icon: <MapPin size={24} className="text-emerald-600" /> },
                 { label: "Publisher", val: "Nova Science", sub: "Publishers — Scopus", icon: <BookOpen size={24} className="text-blue-600" /> },
-                { label: "Date", val: "Oct 09-10", sub: "2026 — Offline Mode", icon: <Clock size={24} className="text-purple-600" /> }
+                { label: "Date", val: "Oct 09-10", sub: "2026 — Offline/Online Mode", icon: <Clock size={24} className="text-purple-600" /> }
               ].map((stat, idx) => (
                 <motion.div
                   key={idx}
