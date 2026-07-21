@@ -218,7 +218,7 @@ const CountdownTimer = () => {
 
   return (
     <div className="flex flex-wrap gap-6 py-6 w-fit">
-      <p align="center">Countdown to the event</p>
+      <p align="center">Countdown to the event</p><br />
       {Object.entries(timeLeft).map(([unit, value]) => (
         <div key={unit} className="flex flex-col items-center">
           <span className="text-4xl md:text-6xl font-serif text-slate-900 font-medium">
