@@ -734,20 +734,10 @@ const App = () => {
                     <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-600"></span>
                   </span>
                   <span className="text-lg md:text-xl font-bold text-emerald-800 tracking-widest uppercase">
-                    Submissions Open 
+
                       <h2>Submissions Open</h2>
-
-                      <Countdown />
-
-                      <a
-                        href="https://cmt3.research.microsoft.com/ICABCR2026"
-                        className="submit-btn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Submit
-                      </a>
                   </span>
+
                 </div>
               </motion.div>
 
