@@ -598,7 +598,31 @@ const App = () => {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
                 <span className="text-[11px] uppercase font-bold tracking-[0.2em] text-slate-500">
-                  Accepting Papers for 2026
+                  Accepting Papers for 2026..
+                    <a
+                      href="https://cmt3.research.microsoft.com/ICABCR2026"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: "inline-block",
+                        backgroundColor: "#e8cd58",
+                        color: "#fff",
+                        padding: "8px 28px",
+                        borderRadius: "6px",
+                        textDecoration: "none",
+                        fontWeight: "600",
+                        fontSize: "12px",
+                        transition: "0.3s ease"
+                      }}
+                      onMouseEnter={(e) => {
+                        e.target.style.backgroundColor = "#e67300";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.target.style.backgroundColor = "#ff8c00";
+                      }}
+                    >
+                      Submit here
+                    </a>
                 </span>
               </motion.div>
 
@@ -610,7 +634,7 @@ const App = () => {
                 International Conference on AI Based Cyber Resilience
               </motion.h1>
               <motion.div variants={fadeInUp} className="text-2xl md:text-3xl font-semibold text-emerald-600 mb-8 tracking-wide">
-                Oct 09-10, 2026
+                Oct 09-10, 2026 at IILM University, Greater Noida, India
               </motion.div>
               {/* Scrolling Deadlines Ticker */}
               <motion.div variants={fadeInUp} className="w-full overflow-hidden border-y border-slate-200 py-2">
