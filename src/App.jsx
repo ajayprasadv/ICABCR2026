@@ -218,7 +218,6 @@ const CountdownTimer = () => {
 
   return (
     <div className="flex flex-wrap gap-6 py-6 w-fit">
-      <p align="center">Countdown to the event</p><br />
       {Object.entries(timeLeft).map(([unit, value]) => (
         <div key={unit} className="flex flex-col items-center">
           <span className="text-4xl md:text-6xl font-serif text-slate-900 font-medium">
@@ -753,6 +752,10 @@ const App = () => {
 
               {/* Timer & CTAs */}
               <motion.div variants={fadeInUp} className="flex flex-col gap-8">
+                  <p className="text-lg md:text-xl font-bold text-emerald-800 tracking-widest uppercase">
+                    Countdown to the event
+                  </p>
+
                 <CountdownTimer />
 
                 <div className="flex flex-wrap gap-4">
