@@ -17,6 +17,74 @@ import scopusLogo from './assets/scopus-logo.png';
 import ConferenceAlerts from './assets/ConferenceAlerts.png';
 import sponsorshipPdf from './assets/ICABCR-2026 Sponsorship Brochure Title.pdf';
 
+//import React, { useEffect, useState } from "react";
+
+function Countdown() {
+  const deadline = new Date("2026-08-31T23:59:59");
+
+  const calculateTimeLeft = () => {
+    const difference = deadline - new Date();
+
+    if (difference <= 0) {
+      return null;
+    }
+
+    return {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / 1000 / 60) % 60),
+      seconds: Math.floor((difference / 1000) % 60),
+    };
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  if (!timeLeft) {
+    return (
+      <div className="countdown-expired">
+        <strong>Submissions Closed</strong>
+      </div>
+    );
+  }
+
+  return (
+    <div className="countdown">
+      <h4>Submissions Close In</h4>
+
+      <div className="countdown-boxes">
+        <div>
+          <span>{timeLeft.days}</span>
+          <small>Days</small>
+        </div>
+
+        <div>
+          <span>{timeLeft.hours}</span>
+          <small>Hours</small>
+        </div>
+
+        <div>
+          <span>{timeLeft.minutes}</span>
+          <small>Minutes</small>
+        </div>
+
+        <div>
+          <span>{timeLeft.seconds}</span>
+          <small>Seconds</small>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
 const ICADC_CONTENT = {
   deadlines: [
     { label: "Submission Deadline", date: "31 August 2026", status: "Open", color: "text-emerald-600", bg: "bg-emerald-50" },
@@ -666,7 +734,19 @@ const App = () => {
                     <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-600"></span>
                   </span>
                   <span className="text-lg md:text-xl font-bold text-emerald-800 tracking-widest uppercase">
-                    Submissions Open
+                    Submissions Open 
+                      <h2>Submissions Open</h2>
+
+                      <Countdown />
+
+                      <a
+                        href="https://cmt3.research.microsoft.com/ICABCR2026"
+                        className="submit-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Submit
+                      </a>
                   </span>
                 </div>
               </motion.div>
