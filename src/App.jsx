@@ -19,70 +19,70 @@ import sponsorshipPdf from './assets/ICABCR-2026 Sponsorship Brochure Title.pdf'
 
 //import React, { useEffect, useState } from "react";
 
-function Countdown() {
-  const deadline = new Date("2026-08-31T23:59:59");
+// function Countdown() {
+//   const deadline = new Date("2026-08-31T23:59:59");
 
-  const calculateTimeLeft = () => {
-    const difference = deadline - new Date();
+//   const calculateTimeLeft = () => {
+//     const difference = deadline - new Date();
 
-    if (difference <= 0) {
-      return null;
-    }
+//     if (difference <= 0) {
+//       return null;
+//     }
 
-    return {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / 1000 / 60) % 60),
-      seconds: Math.floor((difference / 1000) % 60),
-    };
-  };
+//     return {
+//       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+//       hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+//       minutes: Math.floor((difference / 1000 / 60) % 60),
+//       seconds: Math.floor((difference / 1000) % 60),
+//     };
+//   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+//   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
+//   useEffect(() => {
+//     const timer = setInterval(() => {
+//       setTimeLeft(calculateTimeLeft());
+//     }, 1000);
 
-    return () => clearInterval(timer);
-  }, []);
+//     return () => clearInterval(timer);
+//   }, []);
 
-  if (!timeLeft) {
-    return (
-      <div className="countdown-expired">
-        <strong>Submissions Closed</strong>
-      </div>
-    );
-  }
+//   if (!timeLeft) {
+//     return (
+//       <div className="countdown-expired">
+//         <strong>Submissions Closed</strong>
+//       </div>
+//     );
+//   }
 
-  return (
-    <div className="countdown">
-      <h4>Submissions Close In</h4>
+//   return (
+//     <div className="countdown">
+//       <h4>Submissions Close In</h4>
 
-      <div className="countdown-boxes">
-        <div>
-          <span>{timeLeft.days}</span>
-          <small>Days</small>
-        </div>
+//       <div className="countdown-boxes">
+//         <div>
+//           <span>{timeLeft.days}</span>
+//           <small>Days</small>
+//         </div>
 
-        <div>
-          <span>{timeLeft.hours}</span>
-          <small>Hours</small>
-        </div>
+//         <div>
+//           <span>{timeLeft.hours}</span>
+//           <small>Hours</small>
+//         </div>
 
-        <div>
-          <span>{timeLeft.minutes}</span>
-          <small>Minutes</small>
-        </div>
+//         <div>
+//           <span>{timeLeft.minutes}</span>
+//           <small>Minutes</small>
+//         </div>
 
-        <div>
-          <span>{timeLeft.seconds}</span>
-          <small>Seconds</small>
-        </div>
-      </div>
-    </div>
-  );
-}
+//         <div>
+//           <span>{timeLeft.seconds}</span>
+//           <small>Seconds</small>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 
 const ICADC_CONTENT = {
@@ -218,6 +218,7 @@ const CountdownTimer = () => {
 
   return (
     <div className="flex flex-wrap gap-6 py-6 w-fit">
+      <p align="center">Countdown to the event</p>
       {Object.entries(timeLeft).map(([unit, value]) => (
         <div key={unit} className="flex flex-col items-center">
           <span className="text-4xl md:text-6xl font-serif text-slate-900 font-medium">
