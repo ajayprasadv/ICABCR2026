@@ -222,7 +222,7 @@ const Submission = () => {
                                             <p className="text-slate-600 text-sm">Download the official formatting template for your submission.</p>
                                         </div>
                                     </div>
-                                    <a href="#" className="flex items-center justify-center gap-2 px-8 py-3 bg-white hover:bg-slate-100 border border-slate-200 text-slate-900 rounded-lg transition-all text-sm font-bold shadow-sm whitespace-nowrap">
+                                    <a href="https://novapublishers.com/wp-content/uploads/2022/02/Sample-Chapter-02.08.2022-1.docx" className="flex items-center justify-center gap-2 px-8 py-3 bg-white hover:bg-slate-100 border border-slate-200 text-slate-900 rounded-lg transition-all text-sm font-bold shadow-sm whitespace-nowrap">
                                         <Download size={18} /> Download Template
                                     </a>
                                 </div>
