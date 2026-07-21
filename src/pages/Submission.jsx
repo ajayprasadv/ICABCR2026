@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ExternalLink, Download, FileText, CheckCircle, AlertCircle, Layout, BookOpen } from 'lucide-react';
@@ -9,6 +9,74 @@ import FeeStructure from '../assets/FeeStructure.png';
 import ConferenceAlerts from '../assets/ConferenceAlerts.png';
 import scopusLogo from '../assets/scopus-logo.png';
 import novaLogo from '../assets/nova-logo.jpg';
+import './Subm.css';
+import React, { useState, useEffect, useMemo } from 'react';
+
+function Countdown() {
+  const deadline = new Date("2026-08-31T23:59:59");
+
+  const calculateTimeLeft = () => {
+    const difference = deadline - new Date();
+
+    if (difference <= 0) {
+      return null;
+    }
+
+    return {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / 1000 / 60) % 60),
+      seconds: Math.floor((difference / 1000) % 60),
+    };
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  if (!timeLeft) {
+    return (
+      <div className="subm.countdown-expired">
+        <strong>Submissions Closed</strong>
+      </div>
+    );
+  }
+
+  return (
+    <div className="countdown">
+      <h4>Submissions Closes In</h4>
+
+      <div className="countdown-boxes">
+        <div>
+          <span>{timeLeft.days}</span>
+          <small>Days</small>
+        </div>
+
+        <div>
+          <span>{timeLeft.hours}</span>
+          <small>Hours</small>
+        </div>
+
+        <div>
+          <span>{timeLeft.minutes}</span>
+          <small>Minutes</small>
+        </div>
+
+        <div>
+          <span>{timeLeft.seconds}</span>
+          <small>Seconds</small>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -118,13 +186,23 @@ const Submission = () => {
                         </motion.p>
                     </motion.div>
                 </div>
+
+                <div className="container mx-auto px-6 md:px-12 relative z-10">
+                    <br />
+                    <h2>Submissions are Open</h2>
+                    <br />
+                    <br />
+                    <Countdown />
+ 
+                </div>
+
             </header>
 
             {/* Main Content */}
             <main className="pb-32 relative z-10">
                 <div className="container mx-auto px-6 md:px-12">
 
-                    {/* CMT Acknowledgment Section */}
+                    {/* CMT Acknowledgment Section
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -143,7 +221,7 @@ const Submission = () => {
                                 </p>
                             </div>
                         </div>
-                    </motion.div>
+                    </motion.div> */}
 
                     {/* Submission Status (CMT Link) */}
                     <motion.div
