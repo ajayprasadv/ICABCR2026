@@ -271,7 +271,7 @@ const Submission = () => {
                                     {[
                                         { label: "Format", value: "MS Word only." },
                                         { label: "Length", value: "4–8 pages (Strictly enforced)." },
-                                        { label: "Integrity", value: "Must include a Turnitin Report." },
+                                        // { label: "Integrity", value: "Must include a Turnitin Report." },
                                         { label: "Plagiarism", value: "< 10%" },
                                         { label: "AI Similarity", value: "< 20%" },
                                         // { label: "Eligibility", value: "First author must be an M.D., Ph.D., or equivalent." }
