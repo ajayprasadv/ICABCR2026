@@ -455,88 +455,88 @@ const App = () => {
                 {/* IILM Logo */}
                 <img src={logoImg} alt="IILM Logo" className="h-10 xl:h-12 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all" />
                 {/* Divider */}
-                <span className="w-[1px] h-6 xl:h-8 bg-slate-200"></span>
+                {/* <span className="w-[1px] h-6 xl:h-8 bg-slate-200"></span> */}
               </a>
-              {/* Second row with ICABCR Logo */}
+                  {/* Second row with ICABCR Logo */}
               <a href="#" className="flex items-center gap-4 group">
                 <img
-                  src={icabcrLogo}
-                  alt="ICABCR 2026"
-                  className="h-10 xl:h-12 w-auto object-contain mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all"
+                    src={icabcrLogo}
+                    alt="ICABCR 2026"
+                    className="h-10 xl:h-12 w-auto object-contain mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all"
                 />
               </a>
-              {/* Third row with Nova and Scopus logos */}
-              <div className="flex items-center gap-4 ml-1">
-                <img src={novaLogo} alt="Nova Science Publishers" className="h-6 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
-                <img src={scopusLogo} alt="Scopus" className="h-7 sm:h-8 md:h-9 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
-              </div>
+                  {/* Third row with Nova and Scopus logos */}
+                  <div className="flex items-center gap-4 ml-1">
+                    <img src={novaLogo} alt="Nova Science Publishers" className="h-6 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
+                    <img src={scopusLogo} alt="Scopus" className="h-7 sm:h-8 md:h-9 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
+                  </div>
             </div>
 
             <div className="hidden xl:flex items-center gap-4 2xl:gap-8">
-              <NavItem href="#about" label="About" scrolled={true} />
-              <NavItem href="#expectations" label="Tracks" scrolled={true} />
-              <NavItem href="#milestones" label="Dates" scrolled={true} />
-              <NavItem href="#workshops" label="Workshops" scrolled={true} />
+                  <NavItem href="#about" label="About" scrolled={true} />
+                  <NavItem href="#expectations" label="Tracks" scrolled={true} />
+                  <NavItem href="#milestones" label="Dates" scrolled={true} />
+                  <NavItem href="#workshops" label="Workshops" scrolled={true} />
 
-              <Link
-                to="/community"
-                className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
-              >
-                Committee
-                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-              </Link>
+                <Link
+                  to="/community"
+                  className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
+                >
+                  Committee
+                  <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </Link>
 
-              <Link
-                to="/editors"
-                className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
-              >
-                Editors
-                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-              </Link>
+                <Link
+                  to="/editors"
+                  className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
+                >
+                  Editors
+                  <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </Link>
 
-              <Link
-                to="/advisory"
-                className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
-              >
-                Advisory
-                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-              </Link>
+                <Link
+                  to="/advisory"
+                  className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
+                >
+                  Advisory
+                  <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </Link>
 
-              <Link
-                to="/submission"
-                className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
-              >
-                Submissions
-                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-              </Link>
-
-              <a
-                href="/cmt-acknowledgment.html"
-                className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
-              >
-                CMT Acknowledgment
-                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-              </a>
-
-              <a
-                href={sponsorshipPdf}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
-              >
-                Sponsorship Brochure
-                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-              </a>
-
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to="/submission"
-                  className="px-8 py-3 text-[10px] font-bold uppercase tracking-[0.25em] transition-all shadow-lg bg-slate-950 text-white shadow-slate-900/10 hover:bg-emerald-600 inline-block text-center"
+                  className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
                 >
-                  Submit Paper
+                  Submissions
+                  <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                 </Link>
-              </motion.div>
-            </div>
+
+                <a
+                  href="/cmt-acknowledgment.html"
+                  className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
+                >
+                  CMT Acknowledgment
+                  <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </a>
+
+                <a
+                  href={sponsorshipPdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
+                >
+                  Sponsorship Brochure
+                  <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </a>
+
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <Link
+                    to="/submission"
+                    className="px-8 py-3 text-[10px] font-bold uppercase tracking-[0.25em] transition-all shadow-lg bg-slate-950 text-white shadow-slate-900/10 hover:bg-emerald-600 inline-block text-center"
+                  >
+                    Submit Paper
+                  </Link>
+                </motion.div>
+              </div>
           </div>
 
           <div className="xl:hidden flex items-center gap-4">
