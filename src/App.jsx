@@ -453,7 +453,7 @@ const App = () => {
             <div className="flex flex-col gap-2">
               <a href="#" className="flex items-center gap-4 group">
                 {/* IILM Logo */}
-                <img src={logoImg} alt="IILM Logo" className="h-8 xl:h-10 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all" />
+                <img src={logoImg} alt="IILM Logo" className="h-10 xl:h-12 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all" />
                 {/* Divider */}
                 <span className="w-[1px] h-6 xl:h-8 bg-slate-200"></span>
               </a>
@@ -462,7 +462,7 @@ const App = () => {
                 <img
                   src={icabcrLogo}
                   alt="ICABCR 2026"
-                  className="h-8 xl:h-10 w-auto object-contain mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all"
+                  className="h-10 xl:h-12 w-auto object-contain mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all"
                 />
               </a>
               {/* Third row with Nova and Scopus logos */}
