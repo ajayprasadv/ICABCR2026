@@ -389,7 +389,7 @@ const App = () => {
                   </p>
                 </section>
 
-                <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                   <section>
                     <h3 className="text-xl font-serif text-slate-900 mb-4 flex items-center gap-3">
                       <MapPin size={20} className="text-emerald-600" /> Host Institution
@@ -446,14 +446,14 @@ const App = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/95 backdrop-blur-md border-b border-slate-200 py-6 shadow-sm' : 'bg-white/50 backdrop-blur-sm py-8 border-b border-white/40'}`}
+        className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/95 backdrop-blur-md border-b border-slate-200 py-4 xl:py-6 shadow-sm' : 'bg-white/50 backdrop-blur-sm py-4 xl:py-8 border-b border-white/40'}`}
       >
         <div className="container mx-auto px-6 md:px-12">
-          <div className="flex justify-between items-start gap-8">
-            <div className="flex flex-col gap-2">
+          <div className="flex justify-between items-start gap-4 xl:gap-8">
+            <div className="flex flex-col gap-1.5 xl:gap-2">
               <a href="#" className="flex items-center gap-4 group">
                 {/* IILM Logo */}
-                <img src={logoImg} alt="IILM Logo" className="h-10 xl:h-12 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all" />
+                <img src={logoImg} alt="IILM Logo" className="h-8 sm:h-10 xl:h-12 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all" />
                 {/* Divider */}
                 {/* <span className="w-[1px] h-6 xl:h-8 bg-slate-200"></span> */}
               </a>
@@ -462,13 +462,13 @@ const App = () => {
                 <img
                     src={icabcrLogo}
                     alt="ICABCR 2026"
-                    className="h-10 xl:h-12 w-auto object-contain mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all"
+                    className="h-8 sm:h-10 xl:h-12 w-auto object-contain mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all"
                 />
               </a>
                   {/* Third row with Nova and Scopus logos */}
-                  <div className="flex items-center gap-4 ml-1">
-                    <img src={novaLogo} alt="Nova Science Publishers" className="h-6 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
-                    <img src={scopusLogo} alt="Scopus" className="h-7 sm:h-8 md:h-9 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
+                  <div className="flex items-center gap-3 xl:gap-4 ml-1">
+                    <img src={novaLogo} alt="Nova Science Publishers" className="h-5 sm:h-6 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
+                    <img src={scopusLogo} alt="Scopus" className="h-6 sm:h-8 md:h-9 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity" />
                   </div>
             </div>
 
@@ -537,21 +537,23 @@ const App = () => {
                   </Link>
                 </motion.div>
               </div>
-          </div>
 
-          <div className="xl:hidden flex items-center gap-4">
-            {/* Sticky Mobile Register Button */}
-            <motion.div whileTap={{ scale: 0.95 }}>
-              <Link
-                to="/submission"
-                className="px-4 py-2 text-[9px] font-bold uppercase tracking-widest rounded-sm bg-slate-950 text-white shadow-md inline-block text-center"
-              >
-                Submit
-              </Link>
-            </motion.div>
-            <button className="text-slate-900" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            {/* Mobile actions — kept on the same row as the logos so the fixed
+                nav stays short enough for the hero's top padding to clear it */}
+            <div className="xl:hidden flex items-center gap-3 shrink-0">
+              {/* Sticky Mobile Register Button */}
+              <motion.div whileTap={{ scale: 0.95 }}>
+                <Link
+                  to="/submission"
+                  className="px-4 py-2 text-[9px] font-bold uppercase tracking-widest rounded-sm bg-slate-950 text-white shadow-md inline-block text-center"
+                >
+                  Submit
+                </Link>
+              </motion.div>
+              <button className="text-slate-900" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
           </div>
         </div>
       </motion.nav>
@@ -627,7 +629,7 @@ const App = () => {
 
       {/* --- HERO SECTION --- */}
       {/* --- HERO SECTION --- */}
-      <header className="relative min-h-[100vh] flex items-center pt-48 pb-12 overflow-hidden bg-slate-50">
+      <header className="relative min-h-[100vh] flex items-center pt-40 sm:pt-48 xl:pt-56 pb-12 overflow-hidden bg-slate-50">
         {/* BACKGROUND: Subtle Grid Pattern */}
         <div className="absolute inset-0 z-0 opacity-[0.4]"
           style={{ backgroundImage: 'radial-gradient(#cbd5e1 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
@@ -650,17 +652,17 @@ const App = () => {
         </div>
 
         <div className="container mx-auto px-6 md:px-12 relative z-10">
-          <div className="grid lg:grid-cols-12 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
 
             {/* HERO CONTENT LEFT */}
             <motion.div
               initial="hidden"
               animate="visible"
               variants={staggerContainer}
-              className="lg:col-span-8 space-y-12"
+              className="lg:col-span-8 space-y-8 md:space-y-12"
             >
               {/* Badge */}
-              <motion.div variants={fadeInUp} className="inline-flex items-center gap-3 px-5 py-2 bg-white rounded-full shadow-sm border border-slate-100">
+              <motion.div variants={fadeInUp} className="inline-flex flex-wrap items-center gap-3 max-w-full px-5 py-2 bg-white rounded-2xl sm:rounded-full shadow-sm border border-slate-100">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -848,7 +850,7 @@ const App = () => {
             subtitle="As digitalization accelerates, sophisticated threats require intelligent, adaptive defense mechanisms."
           />
 
-          <div className="grid lg:grid-cols-12 gap-12 mt-20">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-20">
             {/* Text Content - Spans 7 cols */}
             <motion.div
               initial="hidden"
@@ -904,7 +906,7 @@ const App = () => {
                   </button>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="bg-white p-8 rounded-sm border border-slate-100 shadow-sm hover:shadow-lg hover:border-emerald-200 transition-all group">
                     <div className="w-10 h-10 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600 mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                       <MapPin size={20} />
@@ -945,7 +947,7 @@ const App = () => {
       {/* --- MILESTONES --- */}
       <section id="milestones" className="py-32 bg-white">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="grid lg:grid-cols-12 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div className="lg:col-span-4">
               <SectionHeader
                 kicker="Important Dates"
@@ -960,7 +962,7 @@ const App = () => {
               variants={staggerContainer}
               className="lg:col-span-8"
             >
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {(ICADC_CONTENT.deadlines || []).map((item, idx) => (
                   <motion.div
                     key={idx}
@@ -1028,7 +1030,7 @@ const App = () => {
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
             variants={staggerContainer}
-            className="grid md:grid-cols-2 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8"
           >
             {filteredTracks.map(track => (
               <motion.div
@@ -1161,7 +1163,7 @@ const App = () => {
       {/* --- FOOTER --- */}
       <footer id="contact" className="bg-slate-950 text-white pt-32 pb-12 border-t border-slate-900">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="grid lg:grid-cols-4 gap-16 mb-24 border-b border-white/10 pb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-16 mb-24 border-b border-white/10 pb-16">
             <div className="lg:col-span-2">
               <span className="font-serif font-bold text-3xl text-white mb-8 block">ICABCR 2026</span>
               <p className="text-slate-400 font-light leading-relaxed max-w-sm mb-8">
