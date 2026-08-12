@@ -16,6 +16,11 @@ import novaLogo from './assets/nova-logo.jpg';
 import scopusLogo from './assets/scopus-logo.png';
 import ConferenceAlerts from './assets/ConferenceAlerts.png';
 import sponsorshipPdf from './assets/ICABCR-2026 Sponsorship Brochure Title.pdf';
+import manjuKhariImg from './assets/ManjuKhari.jpg';
+import shailendraRathoreImg from './assets/DrShailendraRathore.jpg';
+import sudhakarImg from './assets/DrSudhakar.jpg';
+import xiaoZhiGaoImg from './assets/Xiao-Zhi Gao.jpg';
+import siddharthaImg from './assets/DrSiddhartha.jpeg';
 
 //import React, { useEffect, useState } from "react";
 
@@ -118,7 +123,22 @@ const ICADC_CONTENT = {
     { role: "Cryptographer", icon: <Award size={20} /> },
     { role: "Threat Intelligence Specialist", icon: <Microscope size={20} /> },
     { role: "Cybersecurity Researcher", icon: <FileText size={20} /> }
+  ],
+  speakers: [
+    { name: "Dr. Yoginder Talwar", affiliation: "Director, National Informatics Centre, Ministry of Communications & IT", img: null },
+    { name: "Dr. Manju Khari", affiliation: "Professor, JNU, New Delhi", img: manjuKhariImg },
+    { name: "Dr. Shailendra Rathore", affiliation: "Professor, Abertay University, United Kingdom", img: shailendraRathoreImg },
+    { name: "Dr. Raghuraj Singh", affiliation: "Head and Professor at Harcourt Butler Technological Institute, Kanpur", img: null },
+    { name: "Dr. Sudhakar", affiliation: "CERT-In, India", img: sudhakarImg },
+    { name: "Dr. Xiao-Zhi Gao", affiliation: "University of Eastern Finland, Finland", img: xiaoZhiGaoImg },
+    { name: "Dr. Siddharth Chaurasia", affiliation: "Co-Founder, PrajniX Labs, former AI Practice Head and Talent Development Head @TCS", img: siddharthaImg }
   ]
+};
+
+const getInitials = (name) => {
+  const clean = name.replace(/^Dr\.?\s*/i, "");
+  const parts = clean.split(/\s+/).filter(Boolean);
+  return ((parts[0]?.[0] || "") + (parts[parts.length - 1]?.[0] || "")).toUpperCase();
 };
 
 // Animation Variants
@@ -924,6 +944,35 @@ const App = () => {
                     <p className="text-sm text-slate-500 leading-relaxed">
                       Researchers, Students, and InfoSec Professionals ready to lead the next wave of innovation.
                     </p>
+                  </div>
+                </div>
+
+                <div className="pt-8 border-t border-slate-200">
+                  <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-6">Distinguished Speakers</h4>
+                  <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
+                    <motion.div
+                      animate={{ x: ["0%", "-50%"] }}
+                      transition={{ repeat: Infinity, duration: 28, ease: "linear" }}
+                      className="flex gap-6 w-max"
+                    >
+                      {[...ICADC_CONTENT.speakers, ...ICADC_CONTENT.speakers].map((s, idx) => (
+                        <div key={`speaker-${idx}`} className="flex flex-col items-center text-center w-32 shrink-0">
+                          {s.img ? (
+                            <img
+                              src={s.img}
+                              alt={s.name}
+                              className="w-20 h-20 rounded-full object-cover border-2 border-white shadow-md"
+                            />
+                          ) : (
+                            <div className="w-20 h-20 rounded-full bg-emerald-50 border-2 border-white shadow-md flex items-center justify-center text-emerald-600 font-bold text-lg">
+                              {getInitials(s.name)}
+                            </div>
+                          )}
+                          <p className="mt-3 text-xs font-bold text-slate-900 leading-tight">{s.name}</p>
+                          <p className="mt-1 text-[10px] text-slate-500 leading-snug">{s.affiliation}</p>
+                        </div>
+                      ))}
+                    </motion.div>
                   </div>
                 </div>
 
