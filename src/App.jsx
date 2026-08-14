@@ -21,6 +21,8 @@ import shailendraRathoreImg from './assets/DrShailendraRathore.jpg';
 import sudhakarImg from './assets/DrSudhakar.jpg';
 import xiaoZhiGaoImg from './assets/Xiao-Zhi Gao.jpg';
 import siddharthaImg from './assets/DrSiddhartha.jpeg';
+import yoginderTalwarImg from './assets/Yoginder talwar.jpg';
+import raghurajSinghImg from './assets/Raghuraj Singh.jpg';
 
 //import React, { useEffect, useState } from "react";
 
@@ -125,10 +127,10 @@ const ICADC_CONTENT = {
     { role: "Cybersecurity Researcher", icon: <FileText size={20} /> }
   ],
   speakers: [
-    { name: "Dr. Yoginder Talwar", affiliation: "Director, National Informatics Centre, Ministry of Communications & IT", img: null },
+    { name: "Dr. Yoginder Talwar", affiliation: "Director, National Informatics Centre, Ministry of Communications & IT", img: yoginderTalwarImg },
     { name: "Dr. Manju Khari", affiliation: "Professor, JNU, New Delhi", img: manjuKhariImg },
     { name: "Dr. Shailendra Rathore", affiliation: "Professor, Abertay University, United Kingdom", img: shailendraRathoreImg },
-    { name: "Dr. Raghuraj Singh", affiliation: "Head and Professor at Harcourt Butler Technological Institute, Kanpur", img: null },
+    { name: "Dr. Raghuraj Singh", affiliation: "Head and Professor at Harcourt Butler Technological Institute, Kanpur", img: raghurajSinghImg },
     { name: "Dr. Sudhakar", affiliation: "CERT-In, India", img: sudhakarImg },
     { name: "Dr. Xiao-Zhi Gao", affiliation: "University of Eastern Finland, Finland", img: xiaoZhiGaoImg },
     { name: "Dr. Siddharth Chaurasia", affiliation: "Co-Founder, PrajniX Labs, former AI Practice Head and Talent Development Head @TCS", img: siddharthaImg }
@@ -861,6 +863,45 @@ const App = () => {
         </motion.div>
       </div>
 
+      {/* --- DISTINGUISHED SPEAKERS --- */}
+      <section className="py-20 md:py-28 bg-white border-b border-slate-100">
+        <div className="container mx-auto px-6 md:px-12">
+          <SectionHeader
+            kicker="Keynote Lineup"
+            title="Distinguished Speakers"
+            subtitle="Meet the academicians, researchers, and industry leaders headlining ICABCR-2026."
+          />
+          <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
+            <motion.div
+              animate={{ x: ["0%", "-50%"] }}
+              transition={{ repeat: Infinity, duration: 45, ease: "linear" }}
+              className="flex gap-10 w-max"
+            >
+              {[...ICADC_CONTENT.speakers, ...ICADC_CONTENT.speakers].map((s, idx) => (
+                <div
+                  key={`speaker-${idx}`}
+                  className="flex flex-col items-center text-center shrink-0 w-[86vw] sm:w-[276px] md:w-[316px] lg:w-[444px] xl:w-[572px] 2xl:w-[700px] bg-slate-50 border border-slate-100 rounded-2xl shadow-sm p-8 md:p-10"
+                >
+                  {s.img ? (
+                    <img
+                      src={s.img}
+                      alt={s.name}
+                      className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover border-4 border-white shadow-md"
+                    />
+                  ) : (
+                    <div className="w-28 h-28 md:w-36 md:h-36 rounded-full bg-emerald-50 border-4 border-white shadow-md flex items-center justify-center text-emerald-600 font-bold text-2xl">
+                      {getInitials(s.name)}
+                    </div>
+                  )}
+                  <p className="mt-6 text-lg md:text-xl font-bold text-slate-900 leading-tight">{s.name}</p>
+                  <p className="mt-2 text-sm text-slate-500 leading-snug max-w-xs">{s.affiliation}</p>
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* --- ABOUT --- */}
       <section id="about" className="py-20 md:py-32 bg-slate-50">
         <div className="container mx-auto px-6 md:px-12">
@@ -944,35 +985,6 @@ const App = () => {
                     <p className="text-sm text-slate-500 leading-relaxed">
                       Researchers, Students, and InfoSec Professionals ready to lead the next wave of innovation.
                     </p>
-                  </div>
-                </div>
-
-                <div className="pt-8 border-t border-slate-200">
-                  <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-6">Distinguished Speakers</h4>
-                  <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
-                    <motion.div
-                      animate={{ x: ["0%", "-50%"] }}
-                      transition={{ repeat: Infinity, duration: 28, ease: "linear" }}
-                      className="flex gap-6 w-max"
-                    >
-                      {[...ICADC_CONTENT.speakers, ...ICADC_CONTENT.speakers].map((s, idx) => (
-                        <div key={`speaker-${idx}`} className="flex flex-col items-center text-center w-32 shrink-0">
-                          {s.img ? (
-                            <img
-                              src={s.img}
-                              alt={s.name}
-                              className="w-20 h-20 rounded-full object-cover border-2 border-white shadow-md"
-                            />
-                          ) : (
-                            <div className="w-20 h-20 rounded-full bg-emerald-50 border-2 border-white shadow-md flex items-center justify-center text-emerald-600 font-bold text-lg">
-                              {getInitials(s.name)}
-                            </div>
-                          )}
-                          <p className="mt-3 text-xs font-bold text-slate-900 leading-tight">{s.name}</p>
-                          <p className="mt-1 text-[10px] text-slate-500 leading-snug">{s.affiliation}</p>
-                        </div>
-                      ))}
-                    </motion.div>
                   </div>
                 </div>
 
