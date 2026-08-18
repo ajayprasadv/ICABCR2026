@@ -79,7 +79,7 @@ const COMMITTEE_DATA = {
     organizingChairs: [
         { name: "Dr. Ajay Prasad", affiliation: "IILM University, Greater Noida" },
         // { name: "Dr. Alok Agarwal", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Shamik Tiwari", affiliation: "IILM University, Gurugram" },
+        { name: "Dr. Kaushik Ghosh", affiliation: "IILM University, Greater Noida" },
     ],
     organizingCoChairs: [
         { name: "Dr. Anil Saroliya", affiliation: "IILM University, Greater Noida" },
