@@ -24,6 +24,7 @@ import siddharthaImg from './assets/DrSiddhartha.jpeg';
 import yoginderTalwarImg from './assets/Yoginder talwar.jpg';
 import raghurajSinghImg from './assets/Raghuraj Singh.jpg';
 import danishAtherImg from './assets/Danish Ather.jpeg';
+import ankurKhareImg from './assets/Ankur Khare.jpeg';
 
 //import React, { useEffect, useState } from "react";
 
@@ -135,7 +136,8 @@ const ICADC_CONTENT = {
     { name: "Dr. Sudhakar", affiliation: "CERT-In, India", img: sudhakarImg },
     { name: "Dr. Xiao-Zhi Gao", affiliation: "University of Eastern Finland, Finland", img: xiaoZhiGaoImg },
     { name: "Dr. Siddharth Chaurasia", affiliation: "Co-Founder, PrajniX Labs, former AI Practice Head and Talent Development Head @TCS", img: siddharthaImg },
-    { name: "Dr. Danish Ather", affiliation: "Adjunct Professor, Dept. of AI, Tashkent University of IT (al-Khwarizmi)", img: danishAtherImg }
+    { name: "Dr. Danish Ather", affiliation: "Adjunct Professor, Dept. of AI, Tashkent University of IT (al-Khwarizmi)", img: danishAtherImg },
+    { name: "Ankur Khare", affiliation: "Senior Solution Advisor - AI Innovation, SAP America Inc", img: ankurKhareImg }
   ]
 };
 
