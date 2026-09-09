@@ -765,7 +765,7 @@ const App = () => {
                   </span>
                   <span className="text-lg md:text-xl font-bold text-emerald-800 tracking-widest uppercase">
 
-                      <h2>Submissions Open</h2>
+                      <h2>Submissions Open (in extended period)</h2>
                   </span>
 
                 </div>

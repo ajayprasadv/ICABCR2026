@@ -250,7 +250,7 @@ const Submission = () => {
                                 rel="noreferrer"
                                 className="px-8 py-4 bg-emerald-600 border border-emerald-700 text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full transition-colors hover:bg-emerald-700"
                             >
-                                Active
+                                Active (extended period)
                             </a>
                         </div>
                     </motion.div>
