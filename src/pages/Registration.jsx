@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, CreditCard, ListChecks, ReceiptText, FileText, Wrench, UserCheck } from 'lucide-react';
+import { ArrowLeft, CreditCard, ListChecks, ReceiptText, FileText, Wrench, UserCheck, ClipboardList } from 'lucide-react';
 import logoImg from '../assets/iilm-logo.png';
 import icabcrLogo from '../assets/icabcr-logo.jpg';
 import FeeTable from './FeeTable';
@@ -114,24 +114,14 @@ const Registration = () => {
 
                         {/* Registrations Open Banner */}
                         <motion.div variants={fadeInUp} className="mt-8">
-                            <div className="flex flex-col sm:flex-row items-center gap-4 bg-emerald-50 border border-emerald-200 px-6 py-4 rounded-xl shadow-sm shadow-emerald-100/50 max-w-2xl">
-                                <div className="flex items-center gap-4 flex-1">
-                                    <span className="relative flex h-3 w-3 shrink-0">
-                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
-                                        <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-600"></span>
-                                    </span>
-                                    <p className="text-sm md:text-base font-bold text-emerald-800 tracking-wide uppercase">
-                                        Registrations are Open
-                                    </p>
-                                </div>
-                                <a
-                                    href="https://rzp.io/rzp/VAKq1W4"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="px-6 py-2.5 bg-emerald-600 border border-emerald-700 text-white text-xs font-bold uppercase tracking-[0.15em] rounded-full transition-colors hover:bg-emerald-700 whitespace-nowrap"
-                                >
-                                    Pay Registration Fee
-                                </a>
+                            <div className="inline-flex items-center gap-4 bg-emerald-50 border border-emerald-200 px-6 py-3 rounded-xl shadow-sm shadow-emerald-100/50">
+                                <span className="relative flex h-3 w-3 shrink-0">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-600"></span>
+                                </span>
+                                <p className="text-sm md:text-base font-bold text-emerald-800 tracking-wide uppercase">
+                                    Registrations are Open
+                                </p>
                             </div>
                         </motion.div>
                     </motion.div>
@@ -205,6 +195,38 @@ const Registration = () => {
                                     className="px-8 py-4 bg-emerald-600 border border-emerald-700 text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full transition-colors hover:bg-emerald-700 whitespace-nowrap"
                                 >
                                     Pay Now
+                                </a>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    {/* Registration Form */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                    >
+                        <div className="bg-white border border-blue-200 p-8 md:p-12 rounded-2xl shadow-lg shadow-blue-900/5 relative overflow-hidden">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-100 rounded-full blur-[80px]"></div>
+                            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                                <div className="flex items-start gap-6">
+                                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 shrink-0">
+                                        <ClipboardList size={32} />
+                                    </div>
+                                    <div>
+                                        <h2 className="text-2xl md:text-3xl font-serif text-slate-900 mb-2">Registration Form</h2>
+                                        <p className="text-slate-600 text-lg">
+                                            <strong className="text-slate-900 font-semibold">After completing your payment</strong>, you must fill this form for our records.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a
+                                    href="https://docs.google.com/forms/d/e/1FAIpQLSfWHylynQpS2RaDvnCDKmM8C_rWZ5AVHFYgOUyqQOaJ-HxB7Q/viewform?usp=mail_form_link"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="px-8 py-4 bg-blue-600 border border-blue-700 text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full transition-colors hover:bg-blue-700 whitespace-nowrap"
+                                >
+                                    Fill Registration Form
                                 </a>
                             </div>
                         </div>
