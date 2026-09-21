@@ -1,7 +1,7 @@
 // import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ExternalLink, Download, FileText, CheckCircle, AlertCircle, Layout, BookOpen } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Download, FileText, CheckCircle, XCircle, AlertCircle, Layout, BookOpen } from 'lucide-react';
 import logoImg from '../assets/iilm-logo.png';
 import icabcrLogo from '../assets/icabcr-logo.jpg';
 import FeeTable from "./FeeTable";
@@ -135,6 +135,13 @@ const Submission = () => {
                             Advisory
                             <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                         </Link>
+                        <Link
+                            to="/registration"
+                            className="hidden lg:block relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
+                        >
+                            Registration
+                            <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                        </Link>
                         <a
                             href="/cmt-acknowledgment.html"
                             className="hidden lg:block relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
@@ -184,16 +191,42 @@ const Submission = () => {
                         <motion.p variants={fadeInUp} className="text-xl text-slate-600 font-light leading-relaxed max-w-2xl border-l-2 border-emerald-500 pl-6">
                             Review the guidelines and standards for submitting your research to ICABCR 2026. Submissions will be processed securely via CMT.
                         </motion.p>
+
+                        {/* Registrations Open Banner */}
+                        <motion.div variants={fadeInUp} className="mt-8">
+                            <div className="flex flex-col gap-3 bg-emerald-50 border border-emerald-200 px-6 py-4 rounded-xl shadow-sm shadow-emerald-100/50 max-w-2xl">
+                                <div className="flex flex-col sm:flex-row items-center gap-4">
+                                    <div className="flex items-center gap-4 flex-1">
+                                        <span className="relative flex h-3 w-3 shrink-0">
+                                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+                                            <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-600"></span>
+                                        </span>
+                                        <p className="text-sm md:text-base font-bold text-emerald-800 tracking-wide uppercase">
+                                            Registrations are Open
+                                        </p>
+                                    </div>
+                                    <Link
+                                        to="/registration"
+                                        className="px-6 py-2.5 bg-emerald-600 border border-emerald-700 text-white text-xs font-bold uppercase tracking-[0.15em] rounded-full transition-colors hover:bg-emerald-700 whitespace-nowrap"
+                                    >
+                                        Pay Registration Fee
+                                    </Link>
+                                </div>
+                                <p className="text-xs text-emerald-700 pl-7">
+                                    See the full <Link to="/registration" className="font-semibold underline">Registration Guidelines</Link> for what to fill in the Title and ID fields based on your participation type.
+                                </p>
+                            </div>
+                        </motion.div>
                     </motion.div>
                 </div>
 
                 <div className="container mx-auto px-6 md:px-12 relative z-10">
                     <br />
-                    <h2>Submissions are Open</h2>
+                    <h2>Submissions</h2>
                     <br />
                     <br />
                     <Countdown />
- 
+
                 </div>
 
             </header>
@@ -229,29 +262,26 @@ const Submission = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="mb-20 bg-white backdrop-blur-xl border border-emerald-200 p-8 md:p-12 rounded-2xl shadow-lg shadow-emerald-900/5 relative overflow-hidden"
+                        className="mb-20 bg-white backdrop-blur-xl border border-rose-200 p-8 md:p-12 rounded-2xl shadow-lg shadow-rose-900/5 relative overflow-hidden"
                     >
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-100 rounded-full blur-[80px]"></div>
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-rose-100 rounded-full blur-[80px]"></div>
                         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
                             <div className="flex items-start gap-6">
-                                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 shrink-0">
-                                    <CheckCircle size={32} />
+                                <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center text-rose-600 shrink-0">
+                                    <XCircle size={32} />
                                 </div>
                                 <div>
                                     <h2 className="text-2xl md:text-3xl font-serif text-slate-900 mb-2">Submission Link</h2>
                                     <p className="text-slate-600 text-lg">
-                                        Submission must be via CMT: <a href="https://cmt3.research.microsoft.com/ICABCR2026" target="_blank" rel="noreferrer" className="text-emerald-600 font-semibold underline hover:text-emerald-700">https://cmt3.research.microsoft.com/ICABCR2026/Submission/</a>
+                                        Submissions were processed via CMT and are now closed: <span className="text-slate-500 font-semibold">https://cmt3.research.microsoft.com/ICABCR2026/Submission/</span>
                                     </p>
                                 </div>
                             </div>
-                            <a
-                                href="https://cmt3.research.microsoft.com/ICABCR2026"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="px-8 py-4 bg-emerald-600 border border-emerald-700 text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full transition-colors hover:bg-emerald-700"
+                            <span
+                                className="px-8 py-4 bg-rose-50 border border-rose-200 text-rose-700 text-xs font-bold uppercase tracking-[0.2em] rounded-full cursor-not-allowed"
                             >
-                                Active (extended period)
-                            </a>
+                                Submissions Closed
+                            </span>
                         </div>
                     </motion.div>
                     <div className="flex flex-col gap-12">

@@ -98,10 +98,10 @@ import vinayShankarDubeyImg from './assets/Vinay Shankar Dubey.jpeg';
 const ICADC_CONTENT = {
   deadlines: [
     { label: "Submission Deadline", date: "31 August 2026", status: "Open", color: "text-emerald-600", bg: "bg-emerald-50" },
-    // { label: "Acceptance Notification (starts)", date: "5 August 2026", status: "Upcoming", color: "text-slate-500", bg: "bg-slate-50" },
-    { label: "Paper Registration Opens", date: "5 August 2026", status: "Pending", color: "text-slate-500", bg: "bg-slate-50" },
-    { label: "Paper Registration Closes", date: "15 September 2026", status: "Pending", color: "text-slate-500", bg: "bg-slate-50" },
-    { label: "Camera Ready Submission", date: "20 September 2026", status: "Pending", color: "text-slate-500", bg: "bg-slate-50" },
+    // { label: "Acceptance Notification (starts)", date: "5 August 2026", status: "In process", color: "text-slate-500", bg: "bg-slate-50" },
+    { label: "Paper Registration Opens", date: "5 August 2026", status: "Open", color: "text-slate-500", bg: "bg-slate-50" },
+    { label: "Paper Registration Closes", date: "06 October 2026", status: "Open", color: "text-slate-500", bg: "bg-slate-50" },
+    { label: "Camera Ready Submission", date: "20 September 2026", status: "Open", color: "text-slate-500", bg: "bg-slate-50" },
     { label: "Conference Dates", date: "9–10 October 2026", status: "Pending", color: "text-slate-500", bg: "bg-slate-50" }
   ],
   tracks: [
@@ -538,6 +538,14 @@ const App = () => {
                   <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                 </Link>
 
+                <Link
+                  to="/registration"
+                  className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
+                >
+                  Registration
+                  <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-slate-950 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </Link>
+
                 <a
                   href="/cmt-acknowledgment.html"
                   className="relative text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 group text-slate-600 hover:text-slate-950"
@@ -628,6 +636,13 @@ const App = () => {
             >
               Submission Guidelines
             </Link>
+            <Link
+              to="/registration"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-2xl md:text-3xl font-serif text-slate-900 hover:italic transition-all"
+            >
+              Registration
+            </Link>
             <a
               href="/cmt-acknowledgment.html"
               onClick={() => setIsMenuOpen(false)}
@@ -696,9 +711,9 @@ const App = () => {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
                 <span className="text-[11px] uppercase font-bold tracking-[0.2em] text-slate-500">
-                  Accepting Papers for 2026..
+                  Regitrations are open..
                     <a
-                      href="https://cmt3.research.microsoft.com/ICABCR2026"
+                      href="https://rzp.io/rzp/VAKq1W4"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{
@@ -719,8 +734,9 @@ const App = () => {
                         e.target.style.backgroundColor = "#ff8c00";
                       }}
                     >
-                      Submit here
+                      Register Now
                     </a>
+                      <p>"For more details, please visit the registration page."</p>
                 </span>
               </motion.div>
 
@@ -756,16 +772,15 @@ const App = () => {
                 Join leading minds to redefine the future of intelligent digital defense. Oct 09-10, 2026.
               </motion.p>
 
-              {/* Submissions Open Banner */}
+              {/* Submissions Closed Banner */}
               <motion.div variants={fadeInUp} className="pt-2">
-                <div className="inline-flex bg-emerald-50 border border-emerald-200 px-6 py-3 items-center gap-4 rounded-sm shadow-sm shadow-emerald-100/50">
+                <div className="inline-flex bg-rose-50 border border-rose-200 px-6 py-3 items-center gap-4 rounded-sm shadow-sm shadow-rose-100/50">
                   <span className="relative flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-600"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-rose-600"></span>
                   </span>
-                  <span className="text-lg md:text-xl font-bold text-emerald-800 tracking-widest uppercase">
+                  <span className="text-lg md:text-xl font-bold text-rose-800 tracking-widest uppercase">
 
-                      <h2>Submissions Open (in extended period)</h2>
+                      <h2>Submissions Closed</h2>
                   </span>
 
                 </div>
