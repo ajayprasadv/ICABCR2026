@@ -244,9 +244,9 @@ const Registration = () => {
                                 <h2 className="text-2xl md:text-3xl font-serif text-slate-900">Fee Structure</h2>
                             </div>
 
-                            <div className="overflow-x-auto mb-8">
+                           {/*  <div className="overflow-x-auto mb-8">
                                 <FeeTable />
-                            </div>
+                            </div> */}
 
                             <div className="flex justify-center">
                                 <img src={FeeStructure} alt="Fee Structure" className="max-w-full md:max-w-2xl rounded-lg border border-slate-200" />
