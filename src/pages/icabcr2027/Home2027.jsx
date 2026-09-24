@@ -14,6 +14,7 @@ import workshopImg from './assets/iilm-workshop.png';
 import workflowImg from './assets/submission-workflow.jpg';
 import sponsorLogo from './assets/ieee-up-section.jpeg';
 import ieeeLogo from './assets/ieee-logo.webp';
+import scopusLogo from './assets/scopus-logo.png';
 
 const ICADC_CONTENT = {
   deadlines: [
@@ -402,6 +403,7 @@ Situated in the dynamic educational hub of Greater Noida, IILM University promot
             <div className="hidden sm:flex items-center gap-3">
               <img src={sponsorLogo} alt="Technically Co-Sponsored by IEEE UP Section (India)" className="h-9 md:h-10 w-auto object-contain" />
               <img src={ieeeLogo} alt="IEEE" className="h-7 md:h-8 w-auto object-contain" />
+              <img src={scopusLogo} alt="Scopus" className="h-8 md:h-9 w-auto object-contain" />
             </div>
           </div>
 
@@ -723,7 +725,7 @@ redefining the architecture of trust and technological advancement.
                     <BookOpen className="mb-4 text-amber-400" size={24} />
                     <h3 className="text-lg font-bold mb-2">IEEE Published Proceedings</h3>
                     <p className="text-slate-400 text-sm mb-6 leading-relaxed">
-                      Accepted and presented papers will be published by IEEE, subject to meeting quality and formatting standards.
+                      Accepted and presented papers will be published by IEEE, subject to meeting quality and formatting standards, and later submitted for Scopus indexing.
                     </p>
                     <Link to="/icabcr2027/cfp" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-400 hover:text-white transition-colors">
                       View Guidelines <ArrowRight size={14} />
@@ -1028,7 +1030,7 @@ advancement.</p>
 
           {/* --- SPONSOR & PUBLISHING PARTNER STRIP --- */}
           <div className="mb-16 pb-16 border-b border-white/10">
-            <p className="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-500 mb-8">Sponsor &amp; Publishing Partner</p>
+            <p className="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-500 mb-8">Sponsor, Publishing &amp; Indexing Partners</p>
             <div className="flex flex-wrap items-center gap-8">
               <div className="bg-white rounded-lg px-6 py-4 flex items-center gap-3">
                 <img src={sponsorLogo} alt="Technically Co-Sponsored by IEEE UP Section (India)" className="h-12 w-auto object-contain" />
@@ -1036,6 +1038,10 @@ advancement.</p>
               <div className="bg-white rounded-lg px-6 py-4 flex flex-col items-center gap-1">
                 <img src={ieeeLogo} alt="IEEE" className="h-10 w-auto object-contain" />
                 <span className="text-[9px] uppercase tracking-widest text-slate-500 font-bold">Publishing Partner</span>
+              </div>
+              <div className="bg-white rounded-lg px-6 py-4 flex flex-col items-center gap-1">
+                <img src={scopusLogo} alt="Scopus" className="h-10 w-auto object-contain" />
+                <span className="text-[9px] uppercase tracking-widest text-slate-500 font-bold">Indexing Partner</span>
               </div>
             </div>
           </div>

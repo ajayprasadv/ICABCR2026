@@ -6,6 +6,7 @@ import logoImg from './assets/iilm-logo.png';
 import Conflogo from './assets/icabcr-logo.jpg';
 import sponsorLogo from './assets/ieee-up-section.jpeg';
 import ieeeLogo from './assets/ieee-logo.webp';
+import scopusLogo from './assets/scopus-logo.png';
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -437,6 +438,7 @@ const Community = () => {
                     <div className="flex flex-wrap justify-center items-center gap-6 mb-8">
                         <img src={sponsorLogo} alt="Technically Co-Sponsored by IEEE UP Section (India)" className="h-10 w-auto object-contain bg-white rounded-lg px-4 py-2" />
                         <img src={ieeeLogo} alt="IEEE" className="h-8 w-auto object-contain bg-white rounded-lg px-4 py-2" />
+                        <img src={scopusLogo} alt="Scopus" className="h-8 w-auto object-contain bg-white rounded-lg px-4 py-2" />
                     </div>
                     <p className="text-slate-400 text-sm">© 2026 IILM University. All rights reserved.</p>
                     <Link to="/icabcr2027" className="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-emerald-400 hover:text-white transition-colors">

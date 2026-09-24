@@ -5,6 +5,7 @@ import { ArrowLeft, FileText, Info, CheckCircle, Link as LinkIcon, ExternalLink,
 import logoImg from './assets/iilm-logo.png';
 import sponsorLogo from './assets/ieee-up-section.jpeg';
 import ieeeLogo from './assets/ieee-logo.webp';
+import scopusLogo from './assets/scopus-logo.png';
 import Conflogo from './assets/icabcr-logo.jpg';
 
 const slides = [
@@ -147,6 +148,7 @@ const Cfp = () => {
             <span className="hidden md:block w-[1px] h-12 bg-slate-200"></span>
             <img src={sponsorLogo} alt="Technically Co-Sponsored by IEEE UP Section (India)" className="hidden md:block h-12 w-auto object-contain" />
             <img src={ieeeLogo} alt="IEEE" className="hidden md:block h-10 w-auto object-contain" />
+            <img src={scopusLogo} alt="Scopus" className="hidden md:block h-9 w-auto object-contain" />
           </Link>
           <Link to="/icabcr2027" className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-amber-600 transition-colors">
             <ArrowLeft size={16} /> Back to Home
@@ -230,9 +232,12 @@ const Cfp = () => {
               </div>
             </div>
             <div className="p-8 bg-slate-50 border-t border-slate-200 flex flex-col md:flex-row items-center gap-6">
-              <img src={ieeeLogo} alt="IEEE" className="h-10 object-contain" />
+              <div className="flex items-center gap-4 shrink-0">
+                <img src={ieeeLogo} alt="IEEE" className="h-10 object-contain" />
+                <img src={scopusLogo} alt="Scopus" className="h-9 object-contain" />
+              </div>
               <p className="text-sm text-slate-500">
-                Papers must adhere to the <strong>IEEE</strong> conference proceedings <a href="https://ieeeauthorcenter.ieee.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-bold hover:underline">guidelines</a>. Download the <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-bold hover:underline">IEEE Conference Template</a> for detailed formatting instructions.
+                Papers must adhere to the <strong>IEEE</strong> conference proceedings <a href="https://ieeeauthorcenter.ieee.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-bold hover:underline">guidelines</a>. Download the <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-bold hover:underline">IEEE Conference Template</a> for detailed formatting instructions. Accepted papers will later be submitted for <strong>Scopus</strong> indexing.
               </p>
             </div>
           </div>
@@ -358,6 +363,7 @@ const Cfp = () => {
           <div className="flex flex-wrap justify-center items-center gap-6 mb-8">
             <img src={sponsorLogo} alt="Technically Co-Sponsored by IEEE UP Section (India)" className="h-10 w-auto object-contain bg-white rounded-lg px-4 py-2" />
             <img src={ieeeLogo} alt="IEEE" className="h-8 w-auto object-contain bg-white rounded-lg px-4 py-2" />
+            <img src={scopusLogo} alt="Scopus" className="h-8 w-auto object-contain bg-white rounded-lg px-4 py-2" />
           </div>
           <p className="text-slate-400 text-sm">© 2026 IILM University. All rights reserved.</p>
           <Link to="/icabcr2027" className="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-amber-400 hover:text-white transition-colors">Return to Conference Home</Link>
