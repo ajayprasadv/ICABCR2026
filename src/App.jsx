@@ -1330,6 +1330,20 @@ const App = () => {
             </div>            
           </div>
 
+          {/* --- NEXT EDITION BANNER --- */}
+          <div className="mb-12 p-6 md:p-8 rounded-lg border border-emerald-500/30 bg-emerald-500/5 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <p className="text-[10px] uppercase font-bold tracking-[0.3em] text-emerald-400 mb-2">The Next Edition</p>
+              <p className="text-lg md:text-xl font-serif text-white">ICABCR 2027 is now live.</p>
+            </div>
+            <Link
+              to="/icabcr2027"
+              className="px-8 py-3 text-xs font-bold uppercase tracking-[0.2em] bg-emerald-600 text-white hover:bg-emerald-500 transition-colors rounded-sm whitespace-nowrap"
+            >
+              Visit ICABCR 2027 &rarr;
+            </Link>
+          </div>
+
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase font-bold tracking-widest text-slate-600">
             <p>© 2026 IILM University. All rights reserved.</p>
             <div className="flex gap-8">
