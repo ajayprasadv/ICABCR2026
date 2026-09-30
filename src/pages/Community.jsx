@@ -72,17 +72,14 @@ const COMMITTEE_DATA = {
     ],
     generalChairs: [
         { name: "Dr. Vadivel Ayyasamy", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Munish Sabharwal", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Kaushik Ghosh", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Ravi S Iyer", affiliation: "IISc Bengaluru, India" },
         { name: "Dr. Babusena Paul", affiliation: "University Of Johannesburg, South Africa" },
     ],
     organizingChairs: [
         { name: "Dr. Ajay Prasad", affiliation: "IILM University, Greater Noida" },
-        // { name: "Dr. Alok Agarwal", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Kaushik Ghosh", affiliation: "IILM University, Greater Noida" },
     ],
     organizingCoChairs: [
-        { name: "Dr. Anil Saroliya", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Lalit Kumar", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Suman Avdhesh Yadav", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Swati Vashisht", affiliation: "IILM University, Greater Noida" }
@@ -91,8 +88,11 @@ const COMMITTEE_DATA = {
     convenor: [
         { name: "Dr. Ajay Prasad", affiliation: "IILM University, Greater Noida" },
     ],
+    coConvenor: [
+        { name: "Dr. Lalit Kumar", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Suman Avdhesh Yadav", affiliation: "IILM University, Greater Noida" },
+    ],
     secretary: [
-        { name: "Dr. Saurabh Shanu", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Kingshuk Srivastava", affiliation: "IILM University, Greater Noida" },
     ],
     SecretaryTechnicalProgram: [
@@ -107,7 +107,6 @@ const COMMITTEE_DATA = {
         { name: "Dr. Saurabh Kumar", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Amar Shukla", affiliation: "IILM University, Gurugram" },
         { name: "Dr. Anurag Jain", affiliation: "IILM University, Gurugram" },
-        { name: "Dr. Deependra Rastogi", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Harendra Singh", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Pradeep Kumar", affiliation: "IILM University, Greater Noida" },
 
@@ -124,9 +123,8 @@ const COMMITTEE_DATA = {
         { name: "Ms. Surabhi Purwar", affiliation: "IILM University, Greater Noida" },
     ],
     RegistrationCommitteeChairs: [
+        { name: "Dr. Pranav Shrivastva", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Nayantara Kotoky", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Richa Vijay", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Akash Punhani", affiliation: "IILM University, Greater Noida" },
     ],
     FinanceCommitteeChairs: [
         { name: "Dr. Sandeep Saxena", affiliation: "IILM University, Greater Noida" },
@@ -138,30 +136,29 @@ const COMMITTEE_DATA = {
         {name: "Dr. Gunjan Mittal Roy", affiliation: "IILM University, Greater Noida" },
     ],
     ExecutionandCoordinationCommitteeMembers: [
+        { name: "Dr. Richa Vijay", affiliation: "IILM University, Greater Noida" },
         { name: "Mr. Shantanu Bindewari", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. A K Rastogi", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Rani Kumari", affiliation: "IILM University, Greater Noida" },
         { name: "Mr. Ashish Kumar Ratha", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Sahil Kansal", affiliation: "IILM University, Greater Noida" },
         { name: "Ms. Ishu Chaudhary", affiliation: "IILM University, Greater Noida" },
-        { name: "Mr. Ashish Sharma", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Ashish Sharma", affiliation: "IILM University, Greater Noida" },
     ],
     SponsorshipCommitteeChairs: [
-        { name: "Dr. Saurabh Shanu", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Amit Agarwal", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Richa Vijay", affiliation: "IILM University, Greater Noida" },
     ],
     SponsorshipCommitteeCoChairs: [
         { name: "Ms. Jyoti Thakur", affiliation: "IILM University, Greater Noida" },
-        { name: "Mr. Sumeet Choudhary", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Sumit Kumar", affiliation: "IILM University, Greater Noida" },
         { name: "Mr. Mukesh Kumar", affiliation: "IILM University, Greater Noida" },
         { name: "Mr. Hilal", affiliation: "IILM University, Greater Noida" },
         { name: "Ms. Hena Khera", affiliation: "IILM University, Greater Noida" },
         { name: "Ms. Aina Mehta", affiliation: "IILM University, Greater Noida" },
     ],
     WorkshopExecutionChairs: [
-        { name: "Dr. Monika Kumari", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Pranav Srivastava", affiliation: "IILM University, Greater Noida" }
+        { name: "Dr. Amit Agarwal", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Monika Kumari", affiliation: "IILM University, Greater Noida" }
 
     ],
     WorkshopExecutionCoChairs: [
@@ -170,6 +167,7 @@ const COMMITTEE_DATA = {
         { name: "Ms. Simran Chughwani", affiliation: "IILM University, Greater Noida" },
     ],
     technicalProgramCommitteeMembers: [
+        { name: "Dr. Manali Gupta", affiliation: "IILM University, Greater Noida" },
         {name: "Dr. Gunjan Mittal Roy", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Ved Prakash Mishra", affiliation: "Professor, Amity University Dubai" },
         { name: "Dr Swadha Gupta", affiliation: "Shiratech Knowtion GmbH, Germany" },
@@ -198,7 +196,6 @@ const COMMITTEE_DATA = {
         { name: "Dr. Hussain Falih Mahdi", affiliation: "Associate Professor, University of Diyala, Iraq" },
         { name: "Dr. Arijit Ghosh", affiliation: "Indian Statistical Institute (ISI), India" },
         { name: "Dr. Tanupriya Choudhury", affiliation: "UPES, India" },
-        { name: "Dr. Akash Punhani", affiliation: "Associate Professor, IILM University, Greater Noida" },
         { name: "Dr. Sudhir Kumar Barai", affiliation: "BITS Pilani, India" },
         { name: "Dr. Kirti Shukla", affiliation: "Associate Professor, IILM University, Greater Noida" },
         { name: "Dr. P. Kumar", affiliation: "IIT Patna, India" },
@@ -443,6 +440,7 @@ const Community = () => {
                     <CommitteeSection title="Organizing Chairs" icon={<Users size={20} />} members={COMMITTEE_DATA.organizingChairs} />
                     <CommitteeSection title="Organizing Co-Chairs" icon={<Users size={20} />} members={COMMITTEE_DATA.organizingCoChairs} />
                     <CommitteeSection title="Convenor" icon={<Users size={20} />} members={COMMITTEE_DATA.convenor} />
+                    <CommitteeSection title="Co-Convenor" icon={<Users size={20} />} members={COMMITTEE_DATA.coConvenor} />
                     <CommitteeSection title="Secretary" icon={<Users size={20} />} members={COMMITTEE_DATA.secretary} />
                     <CommitteeSection title="Secretary (Technical Program)" icon={<BookOpen size={20} />} members={COMMITTEE_DATA.SecretaryTechnicalProgram} />
                     <CommitteeSection title="Technical Program Committee (Chair)" icon={<Briefcase size={20} />} members={COMMITTEE_DATA.TechnicalProgramCommitteeChair} />
