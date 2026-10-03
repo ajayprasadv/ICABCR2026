@@ -61,6 +61,51 @@ const CommitteeSection = ({ title, icon, members }) => {
     );
 };
 
+const IEEE_UP_SECTION_EXCOM = [
+    { name: "Dr. Suman A. Yadav", position: "Chair, Women in Engineering (WIE)", role: "TPC Chair; coordinates WIE participation and women-in-engineering sessions" },
+    { name: "Dr. M. A. Ansari", position: "Chair, Humanitarian Activities", role: "Advisory Committee member; guidance on sessions related to societal impact of AI" },
+    { name: "Dr. Smita Sharma", position: "Chair, Educational Activities", role: "Advisory Committee member; guidance on tutorials, workshops and student engagement" },
+];
+
+const IEEEExComSection = ({ members }) => (
+    <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-50px" }}
+        variants={staggerContainer}
+        className="mb-16"
+    >
+        <motion.div variants={fadeInUp} className="flex items-center gap-4 mb-8 pb-4 border-b border-slate-200">
+            <div className="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-600">
+                <Globe size={20} />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-900">IEEE UP Section Executive Committee Members</h2>
+        </motion.div>
+        <motion.div variants={fadeInUp} className="overflow-x-auto">
+            <table className="w-full border border-slate-200 text-left text-sm border-collapse">
+                <thead>
+                    <tr className="bg-slate-50">
+                        <th className="border border-slate-200 p-3 font-bold text-slate-900 w-16">S. No.</th>
+                        <th className="border border-slate-200 p-3 font-bold text-slate-900">Name</th>
+                        <th className="border border-slate-200 p-3 font-bold text-slate-900">Position in IEEE UP Section ExCom</th>
+                        <th className="border border-slate-200 p-3 font-bold text-slate-900">Role and Responsibilities in ICABCR-2027</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {members.map((m, idx) => (
+                        <tr key={idx} className="bg-white">
+                            <td className="border border-slate-200 p-3 text-slate-500">{idx + 1}</td>
+                            <td className="border border-slate-200 p-3 font-semibold text-slate-900">{m.name}</td>
+                            <td className="border border-slate-200 p-3 text-slate-600">{m.position}</td>
+                            <td className="border border-slate-200 p-3 text-slate-600">{m.role}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </motion.div>
+    </motion.div>
+);
+
 const COMMITTEE_DATA = {
     chiefPatrons: [
         { name: "Mr. Bharat Kaushal", affiliation: "Chancellor, IILM University, Greater Noida, India" },
@@ -70,48 +115,53 @@ const COMMITTEE_DATA = {
         { name: "Dr. Jayasankar Variyar", affiliation: "Vice Chancellor, IILM University, Greater Noida, India" },
     ],
     generalChairs: [
-        { name: "Dr. Vadivel Ayyasamy", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Munish Sabharwal", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Ravi S Iyer", affiliation: "IISc Bengaluru, India" },
-        { name: "Dr. Babusena Paul", affiliation: "University Of Johannesburg, South Africa" },
+        { name: "Dr. Vadivel Ayyasamy", affiliation: "Dean (SCSE), IILM University, Greater Noida" },
+        { name: "Dr. Kaushik Ghosh", affiliation: "IILM University, Greater Noida" },
+        //{ name: "Dr. Munish Sabharwal", affiliation: "IILM University, Greater Noida" },
+        //{ name: "Dr. Ravi S Iyer", affiliation: "IISc Bengaluru, India" },
+        //{ name: "Dr. Babusena Paul", affiliation: "University Of Johannesburg, South Africa" },
     ],
     organizingChairs: [
         { name: "Dr. Ajay Prasad", affiliation: "IILM University, Greater Noida" },
         // { name: "Dr. Alok Agarwal", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Kaushik Ghosh", affiliation: "IILM University, Greater Noida" },
+        
     ],
     organizingCoChairs: [
-        { name: "Dr. Anil Saroliya", affiliation: "IILM University, Greater Noida" },
+        //{ name: "Dr. Anil Saroliya", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Lalit Kumar", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Suman Avdhesh Yadav", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Swati Vashisht", affiliation: "IILM University, Greater Noida" }
+        //{ name: "Dr. Swati Vashisht", affiliation: "IILM University, Greater Noida" }
 
     ],
     convenor: [
         { name: "Dr. Ajay Prasad", affiliation: "IILM University, Greater Noida" },
     ],
     secretary: [
-        { name: "Dr. Saurabh Shanu", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Kingshuk Srivastava", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Monika Kumari", affiliation: "IILM University, Greater Noida" },
     ],
     SecretaryTechnicalProgram: [
         { name: "Dr. Himanshu Sharma", affiliation: "IILM University, Greater Noida" },
     ],
     TechnicalProgramCommitteeChair: [
-        { name: "Dr. Avadhesh Kumar Gupta", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Anand Singh", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Neha Jain", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Suman Avdhesh Yadav", affiliation: "IILM University, Greater Noida" },
+       //{ name: "Dr. Avadhesh Kumar Gupta", affiliation: "IILM University, Greater Noida" },
+        //{ name: "Dr. Anand Singh", affiliation: "IILM University, Greater Noida" },
+        //{ name: "Dr. Neha Jain", affiliation: "IILM University, Greater Noida" },
     ],
     TechnicalProgramCommitteeCoChairs: [
-        { name: "Dr. Saurabh Kumar", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Amar Shukla", affiliation: "IILM University, Gurugram" },
-        { name: "Dr. Anurag Jain", affiliation: "IILM University, Gurugram" },
-        { name: "Dr. Deependra Rastogi", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Harendra Singh", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Pradeep Kumar", affiliation: "IILM University, Greater Noida" },
+        { name: "Dr. Swati Vashisht", affiliation: "IILM University, Greater Noida" }
+        //{ name: "Dr. Saurabh Kumar", affiliation: "IILM University, Greater Noida" },
+        //{ name: "Dr. Amar Shukla", affiliation: "IILM University, Gurugram" },
+        //{ name: "Dr. Anurag Jain", affiliation: "IILM University, Gurugram" },
+        //{ name: "Dr. Deependra Rastogi", affiliation: "IILM University, Greater Noida" },
+        //{ name: "Dr. Harendra Singh", affiliation: "IILM University, Greater Noida" },
+        //{ name: "Dr. Pradeep Kumar", affiliation: "IILM University, Greater Noida" },
 
     ],
-
+    FinanceCommitteeChairs: [
+        { name: "Dr. Sandeep Saxena", affiliation: "IILM University, Greater Noida" },
+        //{ name: "Dr. Udai Bhan Trivedi", affiliation: "IILM University, Greater Noida" },
+    ],
     MediaOutreachandArtefactsChair: [
         { name: "Dr. Pinki Yadav", affiliation: "IILM University, Greater Noida" },
         { name: "Ms. Apoorva Jain", affiliation: "IILM University, Greater Noida" },
@@ -127,10 +177,7 @@ const COMMITTEE_DATA = {
         { name: "Dr. Richa Vijay", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Akash Punhani", affiliation: "IILM University, Greater Noida" },
     ],
-    FinanceCommitteeChairs: [
-        { name: "Dr. Sandeep Saxena", affiliation: "IILM University, Greater Noida" },
-        { name: "Dr. Udai Bhan Trivedi", affiliation: "IILM University, Greater Noida" },
-    ],
+
     ExecutionandCoordinationCommitteeChairs: [
         { name: "Dr. Kamal Kant", affiliation: "IILM University, Greater Noida" },
         { name: "Dr. Deependra Rastogi", affiliation: "IILM University, Greater Noida" },
@@ -413,6 +460,7 @@ const Community = () => {
                     <CommitteeSection title="Organizing Chairs" icon={<Users size={20} />} members={COMMITTEE_DATA.organizingChairs} />
                     <CommitteeSection title="Organizing Co-Chairs" icon={<Users size={20} />} members={COMMITTEE_DATA.organizingCoChairs} />
                     <CommitteeSection title="Convenor" icon={<Users size={20} />} members={COMMITTEE_DATA.convenor} />
+                    <IEEEExComSection members={IEEE_UP_SECTION_EXCOM} />
                     <CommitteeSection title="Secretary" icon={<Users size={20} />} members={COMMITTEE_DATA.secretary} />
                     <CommitteeSection title="Secretary (Technical Program)" icon={<BookOpen size={20} />} members={COMMITTEE_DATA.SecretaryTechnicalProgram} />
                     <CommitteeSection title="Technical Program Committee (Chair)" icon={<Briefcase size={20} />} members={COMMITTEE_DATA.TechnicalProgramCommitteeChair} />
