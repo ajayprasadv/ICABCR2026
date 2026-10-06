@@ -705,39 +705,40 @@ const App = () => {
               className="lg:col-span-8 space-y-8 md:space-y-12"
             >
               {/* Badge */}
-              <motion.div variants={fadeInUp} className="inline-flex flex-wrap items-center gap-3 max-w-full px-5 py-2 bg-white rounded-2xl sm:rounded-full shadow-sm border border-slate-100">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              <motion.div variants={fadeInUp} className="inline-flex items-center gap-3 max-w-full px-5 py-2 bg-rose-50 rounded-full shadow-sm border border-rose-200">
+                <span className="relative flex h-2 w-2 shrink-0">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-500 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-600"></span>
                 </span>
-                <span className="text-[11px] uppercase font-bold tracking-[0.2em] text-slate-500">
-                  Regitrations are open..
-                    <a
-                      href="https://rzp.io/rzp/VAKq1W4"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        display: "inline-block",
-                        backgroundColor: "#e8cd58",
-                        color: "#fff",
-                        padding: "8px 28px",
-                        borderRadius: "6px",
-                        textDecoration: "none",
-                        fontWeight: "600",
-                        fontSize: "12px",
-                        transition: "0.3s ease"
-                      }}
-                      onMouseEnter={(e) => {
-                        e.target.style.backgroundColor = "#e67300";
-                      }}
-                      onMouseLeave={(e) => {
-                        e.target.style.backgroundColor = "#ff8c00";
-                      }}
-                    >
-                      Register Now
-                    </a>
-                      <p>"For more details, please visit the registration page."</p>
+                <span className="text-[11px] uppercase font-bold tracking-[0.2em] text-rose-700 whitespace-nowrap">
+                  Registrations Closes Today
                 </span>
+                <a
+                  href="https://rzp.io/rzp/VAKq1W4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    backgroundColor: "#e11d48",
+                    color: "#fff",
+                    padding: "8px 20px",
+                    borderRadius: "6px",
+                    textDecoration: "none",
+                    fontWeight: "600",
+                    fontSize: "11px",
+                    letterSpacing: "0.05em",
+                    whiteSpace: "nowrap",
+                    transition: "0.3s ease"
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.backgroundColor = "#be123c";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.backgroundColor = "#e11d48";
+                  }}
+                >
+                  Register Now
+                </a>
               </motion.div>
 
               {/* Headline */}
