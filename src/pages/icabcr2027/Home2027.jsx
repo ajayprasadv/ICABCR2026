@@ -31,7 +31,7 @@ const ICADC_CONTENT = {
     { label: "Paper Acceptance Decision and Notification", date: "Coming up shortly", status: "Upcoming", color: "text-indigo-500", bg: "bg-indigo-50" },
     { label: "Camera-Ready Paper Submission", date: "Coming up shortly", status: "Pending", color: "text-indigo-500", bg: "bg-indigo-50" },
     { label: "Registration Deadline", date: "Coming up shortly", status: "Pending", color: "text-indigo-500", bg: "bg-indigo-50" },
-    { label: "Conference Date", date: "Oct 08-9, 2027", status: "Upcoming", color: "text-indigo-500", bg: "bg-indigo-50" }
+    { label: "Conference Date", date: "December 2027 (Tentative)", status: "Upcoming", color: "text-indigo-500", bg: "bg-indigo-50" }
   ],
 
   tracks: [
@@ -119,8 +119,8 @@ const NavItem = ({ href, label, scrolled }) => (
 );
 
 const CountdownTimer = () => {
-  // Target date: October 8, 2027
-  const targetDate = useMemo(() => new Date("2027-10-08T00:00:00"), []);
+  // Target date: December 2027 (Tentative)
+  const targetDate = useMemo(() => new Date("2027-12-01T00:00:00"), []);
 
   const calculateTimeLeft = () => {
     const difference = +targetDate - +new Date();
@@ -579,7 +579,7 @@ Situated in the dynamic educational hub of Greater Noida, IILM University promot
               </div>
 
               <motion.div variants={fadeInUp} className="text-lg md:text-2xl font-semibold text-amber-300 tracking-wide">
-                Oct 08-9, 2027 at IILM University, Greater Noida, India
+                December 2027 (Tentative) at IILM University, Greater Noida, India
               </motion.div>
 
               {/* Scrolling Deadlines Ticker */}
@@ -611,7 +611,7 @@ redefining the architecture of trust and technological advancement.
               <motion.div variants={fadeInUp} className="lg:hidden flex items-center gap-4 py-3 px-4 bg-slate-800/50 backdrop-blur-sm border border-amber-400/30 rounded-lg shadow-sm">
                 <Calendar size={18} className="text-amber-400" />
                 <div>
-                  <p className="text-sm font-bold text-amber-100">Oct 08-9, 2027</p>
+                  <p className="text-sm font-bold text-amber-100">December 2027 (Tentative)</p>
                   <p className="text-xs text-amber-300/70">IILM University, Greater Noida, India</p>
                 </div>
               </motion.div>
