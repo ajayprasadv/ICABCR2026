@@ -15,6 +15,14 @@ import workflowImg from './assets/submission-workflow.jpg';
 import sponsorLogo from './assets/ieee-up-section.jpeg';
 import ieeeLogo from './assets/ieee-logo.webp';
 import scopusLogo from './assets/scopus-logo.png';
+import glimpse1 from '../../assets/glimpses-optimized/DSC05006.JPG';
+import glimpse2 from '../../assets/glimpses-optimized/DSC04895.JPG';
+import glimpse3 from '../../assets/glimpses-optimized/IMG_8210.JPG';
+import glimpse4 from '../../assets/glimpses-optimized/IMG_9728.JPG';
+import glimpse5 from '../../assets/glimpses-optimized/IMG_9738.JPG';
+import glimpse6 from '../../assets/glimpses-optimized/IMG_9895.jpg';
+
+const ICABCR2026_GLIMPSES = [glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6];
 
 const ICADC_CONTENT = {
   deadlines: [
@@ -691,6 +699,52 @@ redefining the architecture of trust and technological advancement.
         </motion.div>
       </div>
 
+      {/* --- ICABCR 2026 GLIMPSES --- */}
+      <section className="py-20 md:py-28 bg-slate-950 text-white">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+            <div>
+              <div className="flex items-center gap-4 mb-4">
+                <span className="h-[1px] w-10 bg-amber-400"></span>
+                <p className="text-xs uppercase tracking-[0.3em] font-bold text-amber-400">Last Edition</p>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Glimpses from ICABCR 2026</h2>
+            </div>
+            <Link
+              to="/"
+              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-amber-400 hover:text-white transition-colors whitespace-nowrap"
+            >
+              Visit ICABCR 2026 <ArrowRight size={14} />
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {ICABCR2026_GLIMPSES.map((src, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{ duration: 0.25, ease: "easeOut" }}
+                className="relative aspect-[4/3] overflow-hidden rounded-lg border border-white/10 bg-slate-900"
+              >
+                <img
+                  src={src}
+                  alt={`ICABCR 2026 glimpse ${idx + 1}`}
+                  className="w-full h-full object-cover"
+                />
+                <motion.div
+                  initial={{ opacity: 0.95 }}
+                  whileInView={{ opacity: 0 }}
+                  viewport={{ once: true, amount: 0.4 }}
+                  transition={{ duration: 0.35 }}
+                  className="absolute inset-0 bg-white pointer-events-none"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* --- ABOUT --- */}
       <section id="about" className="py-20 md:py-32 bg-slate-50">
         <div className="container mx-auto px-6 md:px-12">
@@ -1090,6 +1144,7 @@ advancement.</p>
             <div className="flex gap-8">
               <a href="#" className="hover:text-slate-400">Privacy Policy</a>
               <a href="#" className="hover:text-slate-400">Terms of Service</a>
+              <Link to="/" className="text-amber-400 hover:text-white transition-colors">ICABCR 2026 &rarr;</Link>
             </div>
           </div>
         </div>

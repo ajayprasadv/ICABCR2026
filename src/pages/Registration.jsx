@@ -112,15 +112,14 @@ const Registration = () => {
                             Complete your ICABCR 2026 registration securely online. Read the guidelines below before making your payment.
                         </motion.p>
 
-                        {/* Registrations Closing Today Banner */}
+                        {/* Registrations Closed Banner */}
                         <motion.div variants={fadeInUp} className="mt-8">
-                            <div className="inline-flex items-center gap-4 bg-rose-50 border border-rose-200 px-6 py-3 rounded-xl shadow-sm shadow-rose-100/50">
+                            <div className="inline-flex items-center gap-4 bg-slate-100 border border-slate-300 px-6 py-3 rounded-xl shadow-sm">
                                 <span className="relative flex h-3 w-3 shrink-0">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-500 opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-3 w-3 bg-rose-600"></span>
+                                    <span className="relative inline-flex rounded-full h-3 w-3 bg-slate-500"></span>
                                 </span>
-                                <p className="text-sm md:text-base font-bold text-rose-800 tracking-wide uppercase">
-                                    Registrations closes TODAY, 6th October — Hurry!
+                                <p className="text-sm md:text-base font-bold text-slate-700 tracking-wide uppercase">
+                                    Registrations are Closed
                                 </p>
                             </div>
                         </motion.div>
@@ -174,20 +173,19 @@ const Registration = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        <div className="bg-white border border-rose-200 p-8 md:p-12 rounded-2xl shadow-lg shadow-rose-900/5 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-rose-100 rounded-full blur-[80px]"></div>
+                        <div className="bg-white border border-slate-200 p-8 md:p-12 rounded-2xl shadow-lg shadow-slate-900/5 relative overflow-hidden">
                             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
                                 <div className="flex items-start gap-6">
-                                    <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center text-rose-600 shrink-0">
+                                    <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 shrink-0">
                                         <CreditCard size={32} />
                                     </div>
                                     <div>
                                         <h2 className="text-2xl md:text-3xl font-serif text-slate-900 mb-2">Payment Link</h2>
                                         <p className="text-slate-600 text-lg">
-                                            Registration payments are processed securely via Razorpay: <span className="text-rose-700 font-semibold">https://rzp.io/rzp/VAKq1W4</span>
+                                            Registration payments are now closed. We cannot accommodate any new registrations.
                                         </p>
-                                        <p className="text-rose-700 font-bold text-sm mt-2 uppercase tracking-wide">
-                                            Closes today, 6th October — we cannot accommodate anyone after today.
+                                        <p className="text-slate-500 text-sm mt-2 break-all">
+                                            https://rzp.io/rzp/VAKq1W4
                                         </p>
                                     </div>
                                 </div>
@@ -195,9 +193,9 @@ const Registration = () => {
                                     href="https://rzp.io/rzp/VAKq1W4"
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="px-8 py-4 bg-rose-600 border border-rose-700 text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full transition-colors hover:bg-rose-700 whitespace-nowrap"
+                                    className="px-8 py-4 bg-slate-500 border border-slate-600 text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full whitespace-nowrap"
                                 >
-                                    Pay Now
+                                    Pay Now (Closed)
                                 </a>
                             </div>
                         </div>
@@ -209,17 +207,19 @@ const Registration = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        <div className="bg-white border border-blue-200 p-8 md:p-12 rounded-2xl shadow-lg shadow-blue-900/5 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-100 rounded-full blur-[80px]"></div>
+                        <div className="bg-white border border-slate-200 p-8 md:p-12 rounded-2xl shadow-lg shadow-slate-900/5 relative overflow-hidden">
                             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
                                 <div className="flex items-start gap-6">
-                                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 shrink-0">
+                                    <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 shrink-0">
                                         <ClipboardList size={32} />
                                     </div>
                                     <div>
                                         <h2 className="text-2xl md:text-3xl font-serif text-slate-900 mb-2">Registration Form</h2>
                                         <p className="text-slate-600 text-lg">
-                                            <strong className="text-slate-900 font-semibold">After completing your payment</strong>, you must fill this form for our records.
+                                            The registration form is no longer accepting responses.
+                                        </p>
+                                        <p className="text-slate-500 text-sm mt-2 break-all">
+                                            https://docs.google.com/forms/d/e/1FAIpQLSfWHylynQpS2RaDvnCDKmM8C_rWZ5AVHFYgOUyqQOaJ-HxB7Q/viewform?usp=mail_form_link
                                         </p>
                                     </div>
                                 </div>
@@ -227,9 +227,9 @@ const Registration = () => {
                                     href="https://docs.google.com/forms/d/e/1FAIpQLSfWHylynQpS2RaDvnCDKmM8C_rWZ5AVHFYgOUyqQOaJ-HxB7Q/viewform?usp=mail_form_link"
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="px-8 py-4 bg-blue-600 border border-blue-700 text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full transition-colors hover:bg-blue-700 whitespace-nowrap"
+                                    className="px-8 py-4 bg-slate-500 border border-slate-600 text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full whitespace-nowrap"
                                 >
-                                    Fill Registration Form
+                                    Form (Closed)
                                 </a>
                             </div>
                         </div>

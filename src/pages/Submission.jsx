@@ -192,29 +192,23 @@ const Submission = () => {
                             Review the guidelines and standards for submitting your research to ICABCR 2026. Submissions will be processed securely via CMT.
                         </motion.p>
 
-                        {/* Registrations Open Banner */}
+                        {/* Registrations Closed Banner */}
                         <motion.div variants={fadeInUp} className="mt-8">
-                            <div className="flex flex-col gap-3 bg-emerald-50 border border-emerald-200 px-6 py-4 rounded-xl shadow-sm shadow-emerald-100/50 max-w-2xl">
-                                <div className="flex flex-col sm:flex-row items-center gap-4">
-                                    <div className="flex items-center gap-4 flex-1">
-                                        <span className="relative flex h-3 w-3 shrink-0">
-                                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
-                                            <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-600"></span>
-                                        </span>
-                                        <p className="text-sm md:text-base font-bold text-emerald-800 tracking-wide uppercase">
-                                            Registrations are Open
-                                        </p>
-                                    </div>
-                                    <Link
-                                        to="/registration"
-                                        className="px-6 py-2.5 bg-emerald-600 border border-emerald-700 text-white text-xs font-bold uppercase tracking-[0.15em] rounded-full transition-colors hover:bg-emerald-700 whitespace-nowrap"
-                                    >
-                                        Pay Registration Fee
-                                    </Link>
+                            <div className="flex flex-col sm:flex-row items-center gap-4 bg-slate-100 border border-slate-300 px-6 py-4 rounded-xl shadow-sm max-w-2xl">
+                                <div className="flex items-center gap-4 flex-1">
+                                    <span className="relative flex h-3 w-3 shrink-0">
+                                        <span className="relative inline-flex rounded-full h-3 w-3 bg-slate-500"></span>
+                                    </span>
+                                    <p className="text-sm md:text-base font-bold text-slate-700 tracking-wide uppercase">
+                                        Registrations are Closed
+                                    </p>
                                 </div>
-                                <p className="text-xs text-emerald-700 pl-7">
-                                    See the full <Link to="/registration" className="font-semibold underline">Registration Guidelines</Link> for what to fill in the Title and ID fields based on your participation type.
-                                </p>
+                                <Link
+                                    to="/registration"
+                                    className="px-6 py-2.5 bg-slate-200 border border-slate-300 text-slate-600 text-xs font-bold uppercase tracking-[0.15em] rounded-full whitespace-nowrap"
+                                >
+                                    View Registration Info
+                                </Link>
                             </div>
                         </motion.div>
                     </motion.div>
