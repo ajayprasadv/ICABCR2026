@@ -50,6 +50,18 @@ const LEADERSHIP = [
 
 const GUESTS_OF_HONOUR = ["Sh. H. S. Randhawa", "Mr. Ram Badan Singh"];
 
+// Set to true to re-enable links to the ICABCR 2027 site
+const ICABCR_2027_LIVE = false;
+
+const Icabcr2027Link = ({ className, children }) =>
+  ICABCR_2027_LIVE ? (
+    <Link to="/icabcr2027" className={className}>{children}</Link>
+  ) : (
+    <span aria-disabled="true" title="Coming soon" className={`${className} opacity-50 cursor-not-allowed pointer-events-none`}>
+      {children}
+    </span>
+  );
+
 const getInitials = (name) => {
   const clean = name.replace(/^Dr\.?\s*/i, "");
   const parts = clean.split(/\s+/).filter(Boolean);
@@ -97,12 +109,11 @@ const App = () => {
             <span className="w-[1px] h-7 bg-slate-200"></span>
             <img src={icabcrLogo} alt="ICABCR 2026" className="h-9 md:h-10 w-auto object-contain mix-blend-multiply" />
           </div>
-          <Link
-            to="/icabcr2027"
+          <Icabcr2027Link
             className="px-5 py-2.5 text-[11px] font-bold uppercase tracking-[0.2em] bg-slate-950 text-white hover:bg-emerald-600 transition-colors rounded-sm whitespace-nowrap"
           >
             ICABCR 2027 &rarr;
-          </Link>
+          </Icabcr2027Link>
         </div>
       </nav>
 
@@ -136,12 +147,11 @@ const App = () => {
             </motion.div>
 
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
-              <Link
-                to="/icabcr2027"
+              <Icabcr2027Link
                 className="inline-flex items-center gap-3 px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold uppercase tracking-[0.2em] rounded-sm transition-colors"
               >
                 Explore ICABCR 2027 <ArrowRight size={14} />
-              </Link>
+              </Icabcr2027Link>
               <a
                 href="#glimpses"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-white/5 border border-white/20 hover:bg-white/10 text-white text-xs font-bold uppercase tracking-[0.2em] rounded-sm transition-colors"
@@ -319,12 +329,11 @@ const App = () => {
             "Cyber resilience is about building systems, and people, that can anticipate, adapt and recover. Let's keep the conversation going."
           </p>
           <p className="text-emerald-300 font-bold tracking-wide uppercase text-sm mb-8">Until the next edition &#128272;&#129302;</p>
-          <Link
-            to="/icabcr2027"
+          <Icabcr2027Link
             className="inline-flex items-center gap-3 px-10 py-5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold uppercase tracking-[0.25em] rounded-sm transition-colors"
           >
             Visit ICABCR 2027 <ArrowRight size={16} />
-          </Link>
+          </Icabcr2027Link>
         </div>
       </section>
 
@@ -338,9 +347,9 @@ const App = () => {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase font-bold tracking-widest text-slate-500">
             <p>&copy; 2026 IILM University. All rights reserved. ICABCR-2026 has concluded.</p>
-            <Link to="/icabcr2027" className="text-emerald-400 hover:text-white transition-colors">
+            <Icabcr2027Link className="text-emerald-400 hover:text-white transition-colors">
               ICABCR 2027 &rarr;
-            </Link>
+            </Icabcr2027Link>
           </div>
         </div>
       </footer>
